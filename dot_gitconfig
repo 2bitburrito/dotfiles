@@ -1,0 +1,7 @@
+[user]
+	name = Hugh Palmer
+	email = palmerhap@gmail.com
+[core]
+	editor = nvim
+[push]
+	autoSetupRemote = true
