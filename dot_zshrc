@@ -38,7 +38,7 @@ export ARCHFLAGS="-arch $(uname -m)"
 # - $ZSH_CUSTOM/macos.zsh
 # SSH Indicator
 if [[ -n $SSH_CONNECTION ]]; then
-  export SSH_INDICATOR="🔒 SSH"
+  export SSH_INDICATOR="🤫 SSH"
 else
   export SSH_INDICATOR=""
 fi
