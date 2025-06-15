@@ -74,10 +74,12 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
-# Start tmux automatically if not already inside a tmux session
-if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+
+# Start tmux automatically if not already inside a tmux session but not on SSH
+if command -v tmux &> /dev/null && [ -z "$TMUX" ] && [ ! -n $SSH_CONNECTION ]]; then
     tmux
 fi
+
 # Vim Motions and cursor:
 bindkey -v
 function zle-keymap-select () {
