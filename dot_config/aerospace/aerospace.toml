@@ -95,7 +95,7 @@ alt-ctrl-shift-v = 'exec-and-forget open -a /Applications/Visual\ Studio\ Code.a
 
 alt-ctrl-shift-c = 'exec-and-forget open -a /Applications/Windsurf.app'
 
-alt-ctrl-shift-m = 'exec-and-forget open -a /Applications/Mimestream.app'
+alt-ctrl-shift-m = 'exec-and-forget open -a /Applications/Thunderbird.app'
 
 alt-ctrl-shift-b = 'exec-and-forget open -a /Applications/Messages.app'
 
@@ -183,7 +183,7 @@ run = 'move-node-to-workspace 2'
 if.app-id = 'com.microsoft.VSCode'
 run = 'move-node-to-workspace 1'
 [[on-window-detected]]
-if.app-id = 'com.mimestream.Mimestream'
+if.app-id = 'com.mozilla.thunderbird'
 run = 'move-node-to-workspace Msg'
 [[on-window-detected]]
 if.app-id = 'com.mitchellh.ghostty'
