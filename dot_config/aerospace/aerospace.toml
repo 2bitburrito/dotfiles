@@ -84,10 +84,6 @@ outer.right = 2
 
 # All possible modifiers: cmd, alt, ctrl, shift
 
-# All possible commands: https://nikitabobko.github.io/AeroSpace/commands
-
-# Opening apps:
-# alt-ctrl-shift-t = 'exec-and-forget open -a /Applications/Google\ Chrome.app'
 
 alt-ctrl-shift-enter = 'exec-and-forget open -a /Applications/Ghostty.app'
 
@@ -95,7 +91,7 @@ alt-ctrl-shift-v = 'exec-and-forget open -a /Applications/Visual\ Studio\ Code.a
 
 alt-ctrl-shift-c = 'exec-and-forget open -a /Applications/Windsurf.app'
 
-alt-ctrl-shift-m = 'exec-and-forget open -a /Applications/Thunderbird.app'
+alt-ctrl-shift-m = 'exec-and-forget open -a /System/Applications/Mail.app'
 
 alt-ctrl-shift-b = 'exec-and-forget open -a /Applications/Messages.app'
 
@@ -141,6 +137,7 @@ alt-ctrl-shift-cmd-4 = 'move-node-to-workspace 4 --focus-follows-window'
 alt-ctrl-shift-cmd-5 = 'move-node-to-workspace 5 --focus-follows-window'
 alt-ctrl-shift-cmd-6 = 'move-node-to-workspace 6 --focus-follows-window'
 alt-ctrl-shift-cmd-enter = 'move-node-to-workspace T --focus-follows-window'
+alt-ctrl-shift-cmd-m = 'move-node-to-workspace Msg --focus-follows-window'
 
 
 alt-shift-h = 'join-with left'
@@ -157,13 +154,19 @@ alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 
 alt-shift-semicolon = 'mode service'
 
+alt-ctrl-shift-g = 'mode join'
+
+[mode.join.binding]
+h = ['join-with left', 'mode main']
+j = ['join-with down', 'mode main']
+k = ['join-with up', 'mode main']
+l = ['join-with right', 'mode main']
+
+
 [mode.service.binding]
 esc = ['reload-config', 'mode main']
-r = ['flatten-workspace-tree', 'mode main'] # reset layout
-f = [
-  'layout floating tiling',
-  'mode main',
-] # Toggle between floating and tiling layout
+r = ['flatten-workspace-tree', 'mode main']
+f = ['layout floating tiling', 'mode main']
 backspace = ['close-all-windows-but-current', 'mode main']
 
 # sticky is not yet supported https://github.com/nikitabobko/AeroSpace/issues/2
@@ -183,7 +186,7 @@ run = 'move-node-to-workspace 2'
 if.app-id = 'com.microsoft.VSCode'
 run = 'move-node-to-workspace 1'
 [[on-window-detected]]
-if.app-id = 'com.mozilla.thunderbird'
+if.app-id = 'com.apple.mail'
 run = 'move-node-to-workspace Msg'
 [[on-window-detected]]
 if.app-id = 'com.mitchellh.ghostty'

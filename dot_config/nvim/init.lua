@@ -18,3 +18,8 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.fn.setreg("l", "yoconsole.log(" .. esc .. 'pF(a"",' .. esc .. "hi" .. esc .. "")
   end,
 })
+
+-------------------
+----- OPTIONS -----
+-------------------
+vim.opt.wrap = true

@@ -1,8 +1,8 @@
-theme = dark:catppuccin-macchiato , light:Material
-font-family = Monaspace
+theme = dark:tokyonight_moon , light:Material
+font-family = JetBrainsMono Nerd Font Mono
 font-size = 19
-background-opacity = .8
-background-blur = 30
+background-opacity = .78
+background-blur = 45
 unfocused-split-opacity = .89
 unfocused-split-fill = #9090ff
 window-save-state = always
