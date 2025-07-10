@@ -71,7 +71,7 @@ alias cat=bat
 alias proj='cd "$(find ~/Documents/Projects -mindepth 1 -maxdepth 1 -type d | fzf)"'
 alias gc="git commit -m"
 alias glog="git log --oneline --graph --decorate --all -10"
-alias ls="lsd -1"
+alias ls="lsd"
 
 # Dirs
 alias ..="cd .."
@@ -85,6 +85,7 @@ if command -v tmux &> /dev/null && [ -z "$TMUX" ] && [ ! -n $SSH_CONNECTION ]]; 
     tmux
 fi
 
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 # Vim Motions and cursor:
 bindkey -v
 function zle-keymap-select () {
