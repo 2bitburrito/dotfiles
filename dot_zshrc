@@ -1,3 +1,4 @@
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
@@ -10,13 +11,6 @@ HYPHEN_INSENSITIVE="true"
 
 zstyle ':omz:update' mode auto      # update automatically without asking
 
-# Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
-
-# Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="true"
 plugins=(git)
 
@@ -85,7 +79,6 @@ if command -v tmux &> /dev/null && [ -z "$TMUX" ] && [ ! -n $SSH_CONNECTION ]]; 
     tmux
 fi
 
-typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 # Vim Motions and cursor:
 bindkey -v
 function zle-keymap-select () {
@@ -108,6 +101,8 @@ export PATH=$PATH:$HOME/go/bin
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
+
+bindkey "^X^E" edit-command-line
 
 [ -f ~/.anthropic.env ] && source ~/.anthropic.env
 export VISUAL='nvim'
