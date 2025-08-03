@@ -1,5 +1,4 @@
 return {
-  { "ellisonleao/gruvbox.nvim" },
   { "rebelot/kanagawa.nvim" },
   { "catppuccin/nvim", name = "catppuccin", lazy = false },
   { "rose-pine/neovim", name = "rose-pine" },
@@ -12,7 +11,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "kanagawa",
+      colorscheme = "catppuccin",
     },
   },
 }
