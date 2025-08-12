@@ -6,3 +6,6 @@ vim.g.timeoutlen = 10
 vim.lsp.set_log_level("off")
 vim.o.scrolloff = 999
 vim.opt.termguicolors = true
+vim.opt.wrap = true
+vim.opt.ttyfast = true
+vim.g.loaded_matchparen = 1

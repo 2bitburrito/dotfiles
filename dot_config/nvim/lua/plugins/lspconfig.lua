@@ -11,6 +11,7 @@ return {
       },
       servers = {
         tsserver = false,
+        markdownlint = false,
         ts_ls = false,
         vtsls = {
           enabled = false,
