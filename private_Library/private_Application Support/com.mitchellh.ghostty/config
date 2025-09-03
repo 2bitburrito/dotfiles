@@ -1,5 +1,5 @@
 theme = dark:catppuccin-mocha , light:Material
-font-family = JetBrainsMono Nerd Font Mono
+font-family = Jetbrains Mono
 font-size = 19
 background-opacity = .78
 background-blur = 45
@@ -7,3 +7,4 @@ unfocused-split-opacity = .89
 unfocused-split-fill = #9090ff
 window-save-state = always
 macos-option-as-alt = true
+title = 👻

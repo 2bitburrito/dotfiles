@@ -1,4 +1,4 @@
-typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
@@ -66,6 +66,7 @@ alias proj='cd "$(find ~/Documents/Projects -mindepth 1 -maxdepth 1 -type d | fz
 alias gc="git commit -m"
 alias glog="git log --oneline --graph --decorate --all -10"
 alias ls="lsd"
+alias td='nvim "/Users/hugh/Library/Mobile Documents/iCloud~md~obsidian/Documents/Coding Vault/Daily Notes/todo.md"'
 
 # Dirs
 alias ..="cd .."
@@ -78,7 +79,6 @@ alias ......="cd ../../../../.."
 if command -v tmux &> /dev/null && [ -z "$TMUX" ] && [ ! -n $SSH_CONNECTION ]]; then
     tmux
 fi
-
 # Vim Motions and cursor:
 bindkey -v
 function zle-keymap-select () {

@@ -4,7 +4,7 @@
 vim.g.snacks_animate = false
 vim.g.timeoutlen = 10
 vim.lsp.set_log_level("off")
-vim.o.scrolloff = 999
+vim.o.scrolloff = 18
 vim.opt.termguicolors = true
 vim.opt.wrap = true
 vim.opt.ttyfast = true
