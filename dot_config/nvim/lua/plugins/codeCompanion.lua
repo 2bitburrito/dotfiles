@@ -1,6 +1,6 @@
-vim.keymap.set({ "n", "v" }, "<leader>ac", "<cmd>CodeCompanionActions<cr>", { noremap = true, silent = true })
-vim.keymap.set({ "n", "v" }, "<leader>aa", "<cmd>CodeCompanionChat Toggle<cr>", { noremap = true, silent = true })
-vim.keymap.set("v", "<leader>ay", "<cmd>CodeCompanionChat Add<cr>", { noremap = true, silent = true })
+-- vim.keymap.set({ "n", "v" }, "<leader>ac", "<cmd>CodeCompanionActions<cr>", { noremap = true, silent = true })
+-- vim.keymap.set({ "n", "v" }, "<leader>aa", "<cmd>CodeCompanionChat Toggle<cr>", { noremap = true, silent = true })
+-- vim.keymap.set("v", "<leader>ay", "<cmd>CodeCompanionChat Add<cr>", { noremap = true, silent = true })
 
 return {
   "olimorris/codecompanion.nvim",
@@ -11,6 +11,7 @@ return {
     "MeanderingProgrammer/render-markdown.nvim",
     "ravitemer/codecompanion-history.nvim",
   },
+  enabled = false,
   extensions = {
     history = {
       enabled = true,

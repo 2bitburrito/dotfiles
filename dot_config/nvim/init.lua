@@ -2,10 +2,12 @@
 require("config.lazy")
 require("scrollEOF").setup()
 
+-- start copilot disabled:
+require("copilot.command").disable()
+
 -------------------
 -- CUSTOM MACROS --
 -------------------
-
 local esc = vim.api.nvim_replace_termcodes("<esc>", true, true, true)
 
 -- Create the autocmd group

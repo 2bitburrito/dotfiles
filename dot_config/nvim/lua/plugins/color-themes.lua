@@ -4,7 +4,6 @@ return {
   { "rose-pine/neovim", name = "rose-pine" },
   { "sainnhe/everforest" },
   { "bluz71/vim-nightfly-colors" },
-  { "NLKNguyen/papercolor-theme" },
   { "romainl/Apprentice" },
 
   -- Configure LazyVim to load colorscheme

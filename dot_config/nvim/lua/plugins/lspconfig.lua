@@ -3,7 +3,6 @@ return {
     "neovim/nvim-lspconfig",
     dependencies = {
       "mason-org/mason-lspconfig.nvim",
-      version = "1.32.0",
     },
     opts = {
       inlay_hints = {

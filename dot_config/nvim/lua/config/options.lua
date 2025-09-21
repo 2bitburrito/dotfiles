@@ -7,5 +7,4 @@ vim.lsp.set_log_level("off")
 vim.o.scrolloff = 18
 vim.opt.termguicolors = true
 vim.opt.wrap = true
-vim.opt.ttyfast = true
 vim.g.loaded_matchparen = 1

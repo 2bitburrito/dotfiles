@@ -70,7 +70,6 @@ return {
 
     chat.setup(opts)
   end,
-  model = "copilot:claude-3.7-sonnet",
   window = {
     width = 20,
   },

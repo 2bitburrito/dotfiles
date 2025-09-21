@@ -6,3 +6,11 @@ local map = vim.keymap.set
 -- Move up and down while centering
 map({ "n", "x" }, "<C-d>", "<C-d>zz", { noremap = true })
 map({ "n", "x" }, "<C-u>", "<C-u>zz", { noremap = true })
+
+-- Fix commands to copy into "-" register rather than "+"
+map({ "x" }, "p", '"-dP', { noremap = true })
+
+-- add shortcut for change to commands
+map({ "n" }, "c(", "ct(", { noremap = true })
+map({ "n" }, "c)", "ct)", { noremap = true })
+map({ "n" }, 'c"', 'ct"', { noremap = true })
