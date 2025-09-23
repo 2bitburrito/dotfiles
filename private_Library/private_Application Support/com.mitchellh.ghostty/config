@@ -1,4 +1,4 @@
-theme = dark:catppuccin-mocha , light:Material
+theme = dark:Rose Pine Moon, light:Rose Pine Dawn
 font-family = Jetbrains Mono
 font-size = 19
 background-opacity = .78
@@ -8,6 +8,5 @@ unfocused-split-fill = #9090ff
 window-save-state = always
 macos-option-as-alt = true
 cursor-style = block
-cursor-color = #000000
 cursor-invert-fg-bg = true
 title = 👻

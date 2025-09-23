@@ -7,10 +7,9 @@ local map = vim.keymap.set
 map({ "n", "x" }, "<C-d>", "<C-d>zz", { noremap = true })
 map({ "n", "x" }, "<C-u>", "<C-u>zz", { noremap = true })
 
--- Fix commands to copy into "-" register rather than "+"
-map({ "x" }, "p", '"-dP', { noremap = true })
+-- Fix commands to copy into "_" register rather than "+"
+-- in a schedule so that it loads after all plugins
+vim.keymap.set("x", "p", '"_dP', { noremap = true, silent = true })
 
--- add shortcut for change to commands
-map({ "n" }, "c(", "ct(", { noremap = true })
-map({ "n" }, "c)", "ct)", { noremap = true })
-map({ "n" }, 'c"', 'ct"', { noremap = true })
+-- Find n Replace all from current word
+map({ "n" }, "<leader>r", ":%s/<C-r><C-w>/", { noremap = true, desc = "Find and replace word" })
