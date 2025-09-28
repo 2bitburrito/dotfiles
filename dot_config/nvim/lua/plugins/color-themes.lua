@@ -13,4 +13,15 @@ return {
       colorscheme = "rose-pine-moon",
     },
   },
+  {
+    "f-person/auto-dark-mode.nvim",
+    opts = {
+      set_dark_mode = function()
+        require("lazyvim").setup({ colorscheme = "rose-pine-moon" })
+      end,
+      set_light_mode = function()
+        require("lazyvim").setup({ colorscheme = "rose-pine-dawn" })
+      end,
+    },
+  },
 }
