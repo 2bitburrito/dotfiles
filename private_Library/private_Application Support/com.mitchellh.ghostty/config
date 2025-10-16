@@ -1,8 +1,8 @@
 theme = dark:Rose Pine Moon, light:Rose Pine Dawn
 font-family = Jetbrains Mono
 font-size = 19
-background-opacity = .78
-background-blur = 45
+background-opacity = .76
+background-blur = 100
 unfocused-split-opacity = .89
 unfocused-split-fill = #9090ff
 window-save-state = always

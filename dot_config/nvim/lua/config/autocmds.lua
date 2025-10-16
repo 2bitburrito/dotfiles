@@ -5,6 +5,8 @@
 -- with `vim.api.nvim_create_autocmd`
 --
 -- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
+
+-- Opaque backgrounds:
 vim.api.nvim_create_autocmd("ColorScheme", {
   pattern = "*",
   callback = function()

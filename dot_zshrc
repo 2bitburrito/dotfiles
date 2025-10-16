@@ -56,15 +56,17 @@ PROMPT='${SSH_INDICATOR} %n@%m %1~ %# '
 source $(brew --prefix)/opt/fzf/shell/completion.zsh
 source $(brew --prefix)/opt/fzf/shell/key-bindings.zsh
 
-# This unbinds alt-c for fzf as it misbehaves in tmux
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-[[ $- =~ i ]] && bindkey -r '\ec'
-
-# Rebind to <alt-q>
-bindkey '\eq' fzf-cd-widget
+# # This unbinds alt-c for fzf as it misbehaves in tmux
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# [[ $- =~ i ]] && bindkey -r '\ec'
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
+#
+# Unbind default ALT-C key (Esc + c)
+bindkey -r -M emacs '\ec'
+bindkey -r -M vicmd '\ec'
+bindkey -r -M viins '\ec'
 
 # ==================
 #   Config Aliases 
@@ -100,7 +102,7 @@ alias ......="cd ../../../../.."
 #   TMUX
 # ========
 # Start tmux automatically if not already inside a tmux session but not on SSH
-if command -v tmux &> /dev/null && [ -z "$TMUX" ] && [ ! -n $SSH_CONNECTION ]]; then
+if command -v tmux &> /dev/null && [ -z "$TMUX" ] && [ ! -n $SSH_CONNECTION ]; then
     tmux
 fi
 # Keep session persistence in vscode/tmux

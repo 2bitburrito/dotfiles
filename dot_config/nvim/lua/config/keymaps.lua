@@ -9,7 +9,10 @@ map({ "n", "x" }, "<C-u>", "<C-u>zz", { noremap = true })
 
 -- Fix commands to copy into "_" register rather than "+"
 -- in a schedule so that it loads after all plugins
-vim.keymap.set("x", "p", '"_dP', { noremap = true, silent = true })
+map("x", "p", '"_dP', { noremap = true, silent = true })
 
 -- Find n Replace all from current word
 map({ "n" }, "<leader>r", ":%s/<C-r><C-w>/", { noremap = true, desc = "Find and replace word" })
+
+-- Make Oil the default explorer
+map({ "n" }, "<leader>e", ":Oil --float<CR>", { noremap = true, desc = "Open Oil with preview" })
