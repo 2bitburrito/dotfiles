@@ -1,6 +1,5 @@
 -- Keymaps are automatically loaded on the VeryLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
--- Add any additional keymaps here
 local map = vim.keymap.set
 
 -- Move up and down while centering
@@ -16,3 +15,7 @@ map({ "n" }, "<leader>r", ":%s/<C-r><C-w>/", { noremap = true, desc = "Find and 
 
 -- Make Oil the default explorer
 map({ "n" }, "<leader>e", ":Oil --float<CR>", { noremap = true, desc = "Open Oil with preview" })
+
+-- Try to fix stupid esc j/k behaviour...?
+-- map({ "n", "i", "v" }, "<A-j>", "<Nop>", { silent = true })
+-- map({ "n", "i", "v" }, "<A-k>", "<Nop>", { silent = true })
