@@ -2,6 +2,7 @@
 #    Oh-My-Zsh
 # ================
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
+source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
@@ -12,7 +13,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 HYPHEN_INSENSITIVE="true"
 
 # update automatically without asking
-zstyle ':omz:update' mode auto      
+zstyle ':omz:update' mode auto
 
 ENABLE_CORRECTION="true"
 plugins=(git)
@@ -50,19 +51,16 @@ fi
 PROMPT='${SSH_INDICATOR} %n@%m %1~ %# '
 
 # ===============
-#     FZF      
+#      FZF
 # ===============
 # fzf completions
 source $(brew --prefix)/opt/fzf/shell/completion.zsh
 source $(brew --prefix)/opt/fzf/shell/key-bindings.zsh
 
-# # This unbinds alt-c for fzf as it misbehaves in tmux
-# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-# [[ $- =~ i ]] && bindkey -r '\ec'
 
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
-#
+
 # Unbind default ALT-C key (Esc + c)
 bindkey -r -M emacs '\ec'
 bindkey -r -M vicmd '\ec'
@@ -85,11 +83,11 @@ alias py="python3"
 alias fzfprev="fzf --preview='bat --style=numbers --color=always {}'"
 alias la=tree
 alias cat=bat
-alias proj='cd "$(find ~/Documents/Projects -mindepth 1 -maxdepth 1 -type d | fzf)"'
 alias gc="git commit -m"
 alias glog="git log --oneline --graph --decorate --all -10"
 alias ls="lsd"
-alias td='nvim "/Users/hugh/Library/Mobile Documents/iCloud~md~obsidian/Documents/Coding Vault/Daily Notes/todo.md"'
+alias td='nvim ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Coding\ Vault/Daily\ Notes/todo.md'
+alias proj='cd "$(find ~/Documents/Projects -mindepth 1 -maxdepth 1 -type d | fzf)"'
 
 # Dirs
 alias ..="cd .."
@@ -129,8 +127,10 @@ preexec() { echo -ne '\e[5 q\e[?12l' ;} # Use beam shape cursor for each new pro
 # ======
 #  Misc
 # ======
-export PATH=$PATH:$HOME/go/bin
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
 export VISUAL='nvim'
+export GOPRIVATE=github.com/nepgpe/*
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /opt/homebrew/bin/terraform terraform

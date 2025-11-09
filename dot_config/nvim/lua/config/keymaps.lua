@@ -13,8 +13,10 @@ map("x", "p", '"_dP', { noremap = true, silent = true })
 -- Find n Replace all from current word
 map({ "n" }, "<leader>r", ":%s/<C-r><C-w>/", { noremap = true, desc = "Find and replace word" })
 
--- Make Oil the default explorer
-map({ "n" }, "<leader>e", ":Oil --float<CR>", { noremap = true, desc = "Open Oil with preview" })
+-- Open Oil:
+map({ "n" }, "<leader>e", function()
+  require("oil").open()
+end, { noremap = true, desc = "Open Oil with preview" })
 
 -- Try to fix stupid esc j/k behaviour...?
 -- map({ "n", "i", "v" }, "<A-j>", "<Nop>", { silent = true })

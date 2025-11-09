@@ -1,8 +1,6 @@
--- ensure copilot completion starts disabled:
-require("copilot.command").disable()
 return {
   "zbirenbaum/copilot.lua",
-  enabled = true,
+  enabled = false,
   suggestion = {
     enabled = false,
   },

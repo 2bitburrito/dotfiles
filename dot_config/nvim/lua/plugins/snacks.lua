@@ -2,7 +2,7 @@ return {
   "snacks.nvim",
   opts = {
     explorer = {
-      enabled = false,
+      enabled = true,
     },
     dashboard = {
       preset = {
