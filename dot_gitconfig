@@ -3,6 +3,7 @@
 	email = palmerhap@gmail.com
 [core]
 	editor = nvim
+	excludesfile = /Users/hpalmer/.gitignore_global
 [push]
 	autoSetupRemote = true
 [init]

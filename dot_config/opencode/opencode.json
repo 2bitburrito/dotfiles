@@ -3,5 +3,7 @@
   "keybinds": {
     "messages_page_up": "ctrl+u",
     "messages_page_down": "ctrl+d",
+    "messages_half_page_up": "ctrl+y",
+    "messages_half_page_down": "ctrl+e",
   }
 }

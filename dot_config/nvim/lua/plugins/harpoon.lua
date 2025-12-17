@@ -1,6 +1,6 @@
 return {
   "ThePrimeagen/harpoon",
-  branch = "harpoon2", -- Use the harpoon2 branch
+  branch = "harpoon2",
   lazy = false, -- Load the plugin when Neovim starts
   requires = {
     "nvim-lua/plenary.nvim", -- Harpoon requires plenary.nvim

@@ -21,5 +21,9 @@ return {
  ]],
       },
     },
+    scratch = {
+      name = "Scratch",
+      ft = "markdown",
+    },
   },
 }

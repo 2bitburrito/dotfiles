@@ -17,31 +17,41 @@ return {
           settings = {},
         },
         html = {},
+
         gopls = {
+          gofumpt = false,
+          codelenses = {
+            gc_details = false,
+            generate = true,
+            regenerate_cgo = true,
+            run_govulncheck = true,
+            test = true,
+            tidy = true,
+            upgrade_dependency = true,
+            vendor = true,
+          },
+          hints = {
+            assignVariableTypes = true,
+            compositeLiteralFields = true,
+            compositeLiteralTypes = true,
+            constantValues = true,
+            functionTypeParameters = true,
+            parameterNames = true,
+            rangeVariableTypes = true,
+          },
           analyses = {
             unusedparams = true,
+            nilness = true,
           },
           staticcheck = true,
           usePlaceholders = true,
           completeUnimported = true,
-          gofumpt = false,
         },
         postgres_lsp = {},
       },
-      setup = {
-        gopls = function(_, opts)
-          -- Format on save for Go files
-          vim.api.nvim_create_autocmd("BufWritePre", {
-            pattern = "*.go",
-            callback = function()
-              vim.lsp.buf.format({ async = false })
-            end,
-          })
-        end,
-      },
       settings = {
-        autoformat = true,
-        format_on_save = true,
+        autoformat = false,
+        format_on_save = false,
         format_on_insert_leave = false,
         format_on_insert_enter = false,
         format_on_file_open = false,

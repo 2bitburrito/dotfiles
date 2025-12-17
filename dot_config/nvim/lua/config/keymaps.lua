@@ -18,6 +18,17 @@ map({ "n" }, "<leader>e", function()
   require("oil").open()
 end, { noremap = true, desc = "Open Oil with preview" })
 
+map({ "n" }, "<leader>at", function()
+  local sM = require("supermaven-nvim.api")
+  sM.toggle()
+  -- make a notification
+  if sM.is_running() then
+    vim.notify("SuperMaven toggled on")
+  else
+    vim.notify("SuperMaven toggled off")
+  end
+end, { noremap = true, desc = "Toggle SuperMaven" })
+
 -- Try to fix stupid esc j/k behaviour...?
 -- map({ "n", "i", "v" }, "<A-j>", "<Nop>", { silent = true })
 -- map({ "n", "i", "v" }, "<A-k>", "<Nop>", { silent = true })

@@ -1,6 +1,6 @@
 github.com:
-    git_protocol: ssh
-    users:
-        2bitburrito:
-        hpalmer_nepgroup:
-    user: 2bitburrito
+  git_protocol: ssh
+  users:
+    2bitburrito:
+    hpalmer_nepgroup:
+  user: hpalmer_nepgroup
