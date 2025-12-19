@@ -64,11 +64,9 @@ outer.right = 2
 # All possible modifiers: cmd, alt, ctrl, shift
 
 alt-ctrl-shift-enter = 'exec-and-forget open -a /Applications/Ghostty.app'
+alt-ctrl-shift-t = 'exec-and-forget open -a /Applications/Ghostty.app'
 
 alt-ctrl-shift-v = 'exec-and-forget open -a /Applications/Visual\ Studio\ Code.app'
-
-# alt-ctrl-shift-m = 'exec-and-forget open -a /System/Applications/Outlook.app'
-# alt-ctrl-shift-m = 'exec-and-forget open -a /System/Applications/Mail.app'
 
 alt-ctrl-shift-b = 'exec-and-forget open -a /Applications/Messages.app'
 
@@ -116,6 +114,7 @@ alt-ctrl-shift-cmd-4 = 'move-node-to-workspace 4 --focus-follows-window'
 alt-ctrl-shift-cmd-5 = 'move-node-to-workspace 5 --focus-follows-window'
 alt-ctrl-shift-cmd-6 = 'move-node-to-workspace 6 --focus-follows-window'
 alt-ctrl-shift-cmd-enter = 'move-node-to-workspace T --focus-follows-window'
+alt-ctrl-shift-cmd-t = 'move-node-to-workspace T --focus-follows-window'
 alt-ctrl-shift-cmd-m = 'move-node-to-workspace Msg --focus-follows-window'
 
 
