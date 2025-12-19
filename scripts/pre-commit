@@ -3,5 +3,5 @@ set -euo pipefail
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
   # Dump Brewfile (without comments to avoid noise) to your dotfiles
-  brew bundle dump --file="$HOME/dotfiles/Brewfile" --force --no-comments
+  brew bundle dump --file="$HOME/dotfiles/Brewfile" --force
 fi
