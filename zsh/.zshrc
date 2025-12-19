@@ -1,14 +1,8 @@
 # ================
 #    Oh-My-Zsh
 # ================
-source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="powerlevel10k/powerlevel10k"
 HYPHEN_INSENSITIVE="true"
 
 # update automatically without asking
@@ -19,8 +13,7 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+eval "$(starship init zsh)"
 
 # ========================
 #    User Configuration
@@ -40,14 +33,6 @@ fi
 
 # Compilation flags
 export ARCHFLAGS="-arch $(uname -m)"
-
-# SSH Indicator
-if [[ -n $SSH_CONNECTION ]]; then
-  export SSH_INDICATOR="🤫 SSH"
-else
-  export SSH_INDICATOR=""
-fi
-PROMPT='${SSH_INDICATOR} %n@%m %1~ %# '
 
 # ===============
 #      FZF
@@ -97,6 +82,7 @@ alias oc='opencode'
 #   Functions
 # ==============
 
+# This doesn't work annoyingly
 # gitsw() {
 #   local branch
 #   git fetch
@@ -156,7 +142,6 @@ complete -o nospace -C /opt/homebrew/bin/terraform terraform
 
 bindkey "^X^E" edit-command-line
 
-[ -f ~/.anthropic.env ] && source ~/.anthropic.env
-
-# Adding zoxide
+# zoxide
 eval "$(zoxide init zsh)"
+
