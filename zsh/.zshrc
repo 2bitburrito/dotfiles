@@ -1,8 +1,8 @@
 # ================
 #    Oh-My-Zsh
 # ================
+
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
@@ -25,6 +25,7 @@ source $ZSH/oh-my-zsh.sh
 # ========================
 #    User Configuration
 # ========================
+
 # pipe cd find to fzf for directories 
 function cdf() {
   local dir
@@ -84,7 +85,6 @@ alias la=tree
 alias cat=bat
 alias gc="git commit -m"
 alias glog="git log --oneline --graph --decorate --all -10"
-alias gitsw='git switch -t "$(git branch -a | fzf)"'
 alias ls="lsd"
 alias td='nvim ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Coding\ Vault/Daily\ Notes/todo.md'
 alias proj='cd "$(find ~/Documents/Projects -mindepth 1 -maxdepth 1 -type d | fzf)"'
@@ -92,22 +92,60 @@ alias k='kubectl'
 alias n='nvim .'
 alias oc='opencode'
 
+# This is a hack to get arount this behaviour:
+# ❯ go test ./... -v
+# zsh: correct './...' to './..' [nyae]?
+alias go='nocorrect go'
+
+# ================
+#  Global Aliases
+# ================
+
+alias -g JQ="| jq"
+alias -g C="| pbcopy"
+alias -g L="| less"
+
+# ================
+#  Suffix Aliases
+# ================
+
+alias -s md='bat'
+alias -s json='jless'
+alias -s yaml='bat -l yaml'
+alias -s go="$EDITOR"
+alias -s py="$EDITOR"
+alias -s rs="$EDITOR"
+alias -s ts="$EDITOR"
+alias -s js="$EDITOR"
+
+alias -s mov='open'
+alias -s jpeg='open'
+alias -s png='open'
+alias -s mp4='open'
+alias -s wav='xxd'
 
 # ==============
 #   Functions
 # ==============
 
-# gitsw() {
-#   local branch
-#   git fetch
-#   branch=$(git branch -a | fzf)
-#   if [[ -n "$branch" ]]; then
-#     git switch -t "$branch"
-#   else
-#     echo "No branch selected."
-#   fi
-# }
+# chpwd executes after a cd:
+chpwd() {
+  ls
+}
 
+
+gits() {
+  local branch
+  branch=$(git branch -a | fzf | xargs)
+  if [[ -n "$branch" ]]; then
+    # Remove 'remotes/origin/' prefix if present
+    branch=${branch#remotes/origin/}
+    echo "Switching to branch: $branch"
+    git switch -t -c "$branch"
+  else
+    echo "No branch selected."
+  fi
+}
 # Dirs
 alias ..="cd .."
 alias ...="cd ../.."
