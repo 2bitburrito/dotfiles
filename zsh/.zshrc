@@ -92,7 +92,7 @@ alias k='kubectl'
 alias n='nvim .'
 alias oc='opencode'
 
-# This is a hack to get arount this behaviour:
+# This is a hack to get arount the stupid autocorrect behaviour here:
 # ❯ go test ./... -v
 # zsh: correct './...' to './..' [nyae]?
 alias go='nocorrect go'
@@ -103,6 +103,7 @@ alias go='nocorrect go'
 
 alias -g JQ="| jq"
 alias -g C="| pbcopy"
+alias -g P="pbpaste >>"
 alias -g L="| less"
 
 # ================
@@ -112,6 +113,7 @@ alias -g L="| less"
 alias -s md='bat'
 alias -s json='jless'
 alias -s yaml='bat -l yaml'
+alias -s yml='bat -l yaml'
 alias -s go="$EDITOR"
 alias -s py="$EDITOR"
 alias -s rs="$EDITOR"
@@ -130,7 +132,7 @@ alias -s wav='xxd'
 
 # chpwd executes after a cd:
 chpwd() {
-  ls
+  ls -a
 }
 
 
