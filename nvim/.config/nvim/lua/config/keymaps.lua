@@ -15,9 +15,10 @@ map({ "n" }, "<leader>r", ":%s/<C-r><C-w>/", { noremap = true, desc = "Find and 
 
 -- Open Oil:
 map({ "n" }, "<leader>e", function()
-  require("oil").open()
-end, { noremap = true, desc = "Open Oil with preview" })
+  require("oil").open_float()
+end, { noremap = true, desc = "Open Oil floating with preview" })
 
+-- Toggle AI Autocompletion:
 map({ "n" }, "<leader>at", function()
   local sM = require("supermaven-nvim.api")
   sM.toggle()
