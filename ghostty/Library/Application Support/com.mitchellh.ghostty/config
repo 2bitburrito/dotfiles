@@ -12,3 +12,4 @@ macos-option-as-alt = true
 cursor-style = block
 cursor-invert-fg-bg = true
 title = 👻
+macos-titlebar-style = hidden

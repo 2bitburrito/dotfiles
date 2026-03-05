@@ -8,3 +8,6 @@ vim.o.scrolloff = 13
 vim.opt.termguicolors = true
 vim.opt.wrap = true
 vim.g.loaded_matchparen = 1
+
+-- Add GOFLAGS to env on boot:
+vim.fn.setenv("GOFLAGS", "-tags=integration")

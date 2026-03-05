@@ -8,6 +8,9 @@ return {
       inlay_hints = {
         enabled = false,
       },
+      init_options = {
+        buildFlags = { "-tags=integration" },
+      },
       servers = {
         tsserver = false,
         markdownlint = false,
@@ -17,9 +20,10 @@ return {
           settings = {},
         },
         html = {},
-
         gopls = {
           gofumpt = false,
+          env = { GOFLAGS = "-tags=integration" },
+          buildFlags = { "-tags=integration" },
           codelenses = {
             gc_details = false,
             generate = true,

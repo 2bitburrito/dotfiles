@@ -6,9 +6,7 @@ require("config.lazy")
 local esc = vim.api.nvim_replace_termcodes("<esc>", true, true, true)
 local rtn = vim.api.nvim_replace_termcodes("<cr>", true, true, true)
 
--- === Javascript Debug Print ===
---
--- Create the autocmd group
+-- === Javascript ===
 local js_log_group = vim.api.nvim_create_augroup("JSLogMacro", { clear = true })
 vim.api.nvim_create_autocmd("FileType", {
   group = js_log_group,
@@ -24,7 +22,19 @@ vim.api.nvim_create_autocmd("FileType", {
   group = markdown_group,
   pattern = { "markdown", "md" },
   callback = function()
+    -- Auto insert date header for my todo file format
     vim.fn.setreg("d", "i---" .. rtn .. "### " .. os.date("%Y-%m-%d") .. rtn .. "- ")
-    vim.fn.setreg("c", "4jfTvt-;yggPA #comment ()" .. esc .. "i")
+    -- Get the TFC ticket number and format the commit message
+    vim.fn.setreg("c", "4jfTv8lyggPA #comment ()" .. esc .. "i")
+  end,
+})
+
+-- === Go ===
+local go_group = vim.api.nvim_create_augroup("GoMacro", { clear = true })
+vim.api.nvim_create_autocmd("FileType", {
+  group = go_group,
+  pattern = { "go" },
+  callback = function()
+    vim.fn.setreg("l", 'yiwofmt.Printf("' .. esc .. "pa: %+v" .. esc .. "f)i, " .. esc .. "p")
   end,
 })
