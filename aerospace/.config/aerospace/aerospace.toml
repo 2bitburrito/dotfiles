@@ -105,6 +105,7 @@ alt-ctrl-shift-4 = 'workspace 4'
 alt-ctrl-shift-5 = 'workspace 5'
 alt-ctrl-shift-6 = 'workspace 6'
 alt-ctrl-shift-m = 'workspace Msg'
+alt-ctrl-shift-e = 'workspace Msg'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-ctrl-shift-cmd-1 = 'move-node-to-workspace 1 --focus-follows-window'
@@ -116,6 +117,7 @@ alt-ctrl-shift-cmd-6 = 'move-node-to-workspace 6 --focus-follows-window'
 alt-ctrl-shift-cmd-enter = 'move-node-to-workspace T --focus-follows-window'
 alt-ctrl-shift-cmd-t = 'move-node-to-workspace T --focus-follows-window'
 alt-ctrl-shift-cmd-m = 'move-node-to-workspace Msg --focus-follows-window'
+alt-ctrl-shift-cmd-e = 'move-node-to-workspace Msg --focus-follows-window'
 
 
 alt-shift-h = 'join-with left'

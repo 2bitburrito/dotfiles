@@ -7,6 +7,15 @@
       "oauth": {
         "scope": "tools:read write"
       }
+    },
+    "playwright": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@playwright/mcp@latest",
+        "--headless"
+      ]
     }
   }
 }

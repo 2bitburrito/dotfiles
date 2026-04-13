@@ -105,6 +105,7 @@ alias -g JQ="| jq"
 alias -g C="| pbcopy"
 alias -g P="pbpaste >>"
 alias -g L="| less"
+alias -g G="| rg "
 
 # ================
 #  Suffix Aliases
@@ -200,3 +201,5 @@ bindkey "^X^E" edit-command-line
 
 # Adding zoxide
 eval "$(zoxide init zsh)"
+
+. "$HOME/.local/bin/env"
