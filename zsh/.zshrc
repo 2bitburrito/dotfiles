@@ -4,14 +4,10 @@
 
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME=""
 HYPHEN_INSENSITIVE="true"
 
-# update automatically without asking
 zstyle ':omz:update' mode auto
 
 ENABLE_CORRECTION="true"
@@ -41,14 +37,6 @@ fi
 
 # Compilation flags
 export ARCHFLAGS="-arch $(uname -m)"
-
-# SSH Indicator
-if [[ -n $SSH_CONNECTION ]]; then
-  export SSH_INDICATOR="🤫 SSH"
-else
-  export SSH_INDICATOR=""
-fi
-PROMPT='${SSH_INDICATOR} %n@%m %1~ %# '
 
 # ===============
 #      FZF
@@ -202,4 +190,6 @@ bindkey "^X^E" edit-command-line
 # Adding zoxide
 eval "$(zoxide init zsh)"
 
-. "$HOME/.local/bin/env"
+if [ -f "$HOME/.local/bin/env" ]; then
+  . "$HOME/.local/bin/env"
+fi
