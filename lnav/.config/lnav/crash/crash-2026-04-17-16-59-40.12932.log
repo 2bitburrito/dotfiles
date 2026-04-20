@@ -1,0 +1,1139 @@
+2026-04-17T16:59:40.541+10:00 I t0 lnav.cc:3121 lnav started 0
+2026-04-17T16:59:40.541+10:00 I t0 fs_util.cc:89 self path: /opt/homebrew/Cellar/lnav/0.13.2/bin/lnav
+2026-04-17T16:59:40.541+10:00 D t0 lnav_config.cc:2090 skipping writing sample: root-config.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.541+10:00 D t0 lnav_config.cc:2090 skipping writing sample: de-keymap.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.541+10:00 D t0 lnav_config.cc:2090 skipping writing sample: default-keymap.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.541+10:00 D t0 lnav_config.cc:2090 skipping writing sample: fr-keymap.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.541+10:00 D t0 lnav_config.cc:2090 skipping writing sample: sv-keymap.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.541+10:00 D t0 lnav_config.cc:2090 skipping writing sample: uk-keymap.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.541+10:00 D t0 lnav_config.cc:2090 skipping writing sample: us-keymap.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.541+10:00 D t0 lnav_config.cc:2090 skipping writing sample: default-theme.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.541+10:00 D t0 lnav_config.cc:2090 skipping writing sample: dracula.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.541+10:00 D t0 lnav_config.cc:2090 skipping writing sample: eldar.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.541+10:00 D t0 lnav_config.cc:2090 skipping writing sample: grayscale.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.541+10:00 D t0 lnav_config.cc:2090 skipping writing sample: modus-operandi.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.541+10:00 D t0 lnav_config.cc:2090 skipping writing sample: monocai.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.541+10:00 D t0 lnav_config.cc:2090 skipping writing sample: night-owl.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.541+10:00 D t0 lnav_config.cc:2090 skipping writing sample: solarized-dark.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.541+10:00 D t0 lnav_config.cc:2090 skipping writing sample: solarized-light.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.541+10:00 I t0 lnav_config.cc:2109 loading builtin configuration into default
+2026-04-17T16:59:40.548+10:00 I t0 lnav_config.cc:2111 loading builtin configuration into base
+2026-04-17T16:59:40.554+10:00 I t0 lnav_config.cc:2114 loading installed configuration files
+2026-04-17T16:59:40.554+10:00 I t0 lnav_config.cc:2120 loading configuration files in configs directories: /etc/lnav/configs/*/*.json
+2026-04-17T16:59:40.554+10:00 I t0 lnav_config.cc:2120 loading configuration files in configs directories: /opt/homebrew/Cellar/lnav/0.13.2/etc/lnav/configs/*/*.json
+2026-04-17T16:59:40.554+10:00 I t0 lnav_config.cc:2120 loading configuration files in configs directories: /Users/hpalmer/.config/lnav/configs/*/*.json
+2026-04-17T16:59:40.554+10:00 I t0 lnav_config.cc:2140 loading configuration files in format directories: /etc/lnav/formats/*/config.json
+2026-04-17T16:59:40.554+10:00 I t0 lnav_config.cc:2140 loading configuration files in format directories: /etc/lnav/formats/*/config.*.json
+2026-04-17T16:59:40.554+10:00 I t0 lnav_config.cc:2140 loading configuration files in format directories: /opt/homebrew/Cellar/lnav/0.13.2/etc/lnav/formats/*/config.json
+2026-04-17T16:59:40.554+10:00 I t0 lnav_config.cc:2140 loading configuration files in format directories: /opt/homebrew/Cellar/lnav/0.13.2/etc/lnav/formats/*/config.*.json
+2026-04-17T16:59:40.554+10:00 I t0 lnav_config.cc:2140 loading configuration files in format directories: /Users/hpalmer/.config/lnav/formats/*/config.json
+2026-04-17T16:59:40.554+10:00 I t0 lnav_config.cc:2140 loading configuration files in format directories: /Users/hpalmer/.config/lnav/formats/*/config.*.json
+2026-04-17T16:59:40.554+10:00 I t0 lnav_config.cc:2154 loading user configuration
+2026-04-17T16:59:40.554+10:00 I t0 lnav_config.cc:1983 loading configuration from /Users/hpalmer/.config/lnav/config.json
+2026-04-17T16:59:40.554+10:00 I t0 log.annotate.cc:84 preparing annotation condition expression: SELECT 1 WHERE :log_body LIKE '%[context]%[/context]%'
+2026-04-17T16:59:40.554+10:00 I t0 log.annotate.cc:84 preparing annotation condition expression: SELECT 1 WHERE :log_level COLLATE loglevel >= 'error' AND :log_body LIKE '% at character %' AND :log_format IN ('postgres_log', 'vpostgres_log')
+2026-04-17T16:59:40.554+10:00 I t0 piper.looper.cc:95 checking demux definition: container
+2026-04-17T16:59:40.554+10:00 I t0 piper.looper.cc:95 checking demux definition: container-with-type
+2026-04-17T16:59:40.554+10:00 I t0 piper.looper.cc:95 checking demux definition: recv-with-pod
+2026-04-17T16:59:40.555+10:00 I t0 view_curses.cc:1130 found 0 contrasting colors for highlights
+2026-04-17T16:59:40.555+10:00 I t0 view_curses.cc:1130 found 0 contrasting colors for highlights
+2026-04-17T16:59:40.555+10:00 I t0 view_curses.cc:1130 found 0 contrasting colors for highlights
+2026-04-17T16:59:40.556+10:00 I t0 view_curses.cc:1130 found 0 contrasting colors for highlights
+2026-04-17T16:59:40.556+10:00 I t0 view_curses.cc:1130 found 0 contrasting colors for highlights
+2026-04-17T16:59:40.556+10:00 I t0 view_curses.cc:1130 found 0 contrasting colors for highlights
+2026-04-17T16:59:40.556+10:00 I t0 view_curses.cc:1130 found 0 contrasting colors for highlights
+2026-04-17T16:59:40.556+10:00 I t0 view_curses.cc:1130 found 0 contrasting colors for highlights
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: access_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: alb_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: block_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: bunyan_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: caddy_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: candlepin_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: choose_repo_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: cloudflare_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: cloudvm_ram_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: cups_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: dpkg_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: ecs_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: elb_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: engine_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: env_logger_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: error_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: esx_syslog_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: fsck_hfs_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: github_events_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: glog_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: haproxy_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: java_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: journald_json_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: katello_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: laravel_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: lnav_debug_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: mysql_error_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: mysql_gen_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: mysql_slow_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: nextcloud_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: nextflow_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: openam_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: openamdb_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: openstack_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: otlp_python_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: page_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: pcap_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: pino_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: postgres_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: procstate_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: proxifier_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: rails_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: redis_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: simple_rs_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: snaplogic_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: spdlog_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: sssd_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: strace_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: sudo_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: syslog_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: s3_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: tcf_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: tcsh_history.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: unifi_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: uwsgi_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: vdsm_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: vmk_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: vmw_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: vmw_vc_svc_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: vmw_py_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: vpostgres_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: web_robot_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: xmlrpc_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: zap_console_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: zellij_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1181 skipping writing sample: zookeeper_log.json (mtimes 1772143216 >= 1772142896)
+2026-04-17T16:59:40.556+10:00 I t0 log_format_loader.cc:1606 report-access-log.lnav (): setting output format to 7
+2026-04-17T16:59:40.556+10:00 D t0 log_format_loader.cc:1408 Loading default formats
+2026-04-17T16:59:40.557+10:00 D t0 log_format_loader.cc:88 Loading format -- access_log
+2026-04-17T16:59:40.557+10:00 D t0 log_format_loader.cc:88 Loading format -- alb_log
+2026-04-17T16:59:40.557+10:00 D t0 log_format_loader.cc:88 Loading format -- block_log
+2026-04-17T16:59:40.557+10:00 D t0 log_format_loader.cc:88 Loading format -- bunyan_log
+2026-04-17T16:59:40.557+10:00 D t0 log_format_loader.cc:88 Loading format -- caddy_log
+2026-04-17T16:59:40.557+10:00 D t0 log_format_loader.cc:88 Loading format -- candlepin_log
+2026-04-17T16:59:40.557+10:00 D t0 log_format_loader.cc:88 Loading format -- choose_repo_log
+2026-04-17T16:59:40.557+10:00 D t0 log_format_loader.cc:88 Loading format -- cloudflare_json_log
+2026-04-17T16:59:40.558+10:00 D t0 log_format_loader.cc:88 Loading format -- cloudvm_ram_log
+2026-04-17T16:59:40.558+10:00 D t0 log_format_loader.cc:88 Loading format -- cups_log
+2026-04-17T16:59:40.558+10:00 D t0 log_format_loader.cc:88 Loading format -- dpkg_log
+2026-04-17T16:59:40.558+10:00 D t0 log_format_loader.cc:88 Loading format -- ecs_log
+2026-04-17T16:59:40.558+10:00 D t0 log_format_loader.cc:88 Loading format -- elb_log
+2026-04-17T16:59:40.558+10:00 D t0 log_format_loader.cc:88 Loading format -- engine_log
+2026-04-17T16:59:40.558+10:00 D t0 log_format_loader.cc:88 Loading format -- env_logger_log
+2026-04-17T16:59:40.558+10:00 D t0 log_format_loader.cc:88 Loading format -- error_log
+2026-04-17T16:59:40.558+10:00 D t0 log_format_loader.cc:88 Loading format -- esx_syslog_log
+2026-04-17T16:59:40.558+10:00 D t0 log_format_loader.cc:88 Loading format -- fsck_hfs_log
+2026-04-17T16:59:40.558+10:00 D t0 log_format_loader.cc:88 Loading format -- github_events_log
+2026-04-17T16:59:40.559+10:00 D t0 log_format_loader.cc:88 Loading format -- glog_log
+2026-04-17T16:59:40.559+10:00 D t0 log_format_loader.cc:88 Loading format -- haproxy_log
+2026-04-17T16:59:40.559+10:00 D t0 log_format_loader.cc:88 Loading format -- java_log
+2026-04-17T16:59:40.559+10:00 D t0 log_format_loader.cc:88 Loading format -- journald_json_log
+2026-04-17T16:59:40.560+10:00 D t0 log_format_loader.cc:88 Loading format -- katello_log
+2026-04-17T16:59:40.560+10:00 D t0 log_format_loader.cc:88 Loading format -- laravel_log
+2026-04-17T16:59:40.560+10:00 D t0 log_format_loader.cc:88 Loading format -- lnav_debug_log
+2026-04-17T16:59:40.560+10:00 D t0 log_format_loader.cc:88 Loading format -- mysql_error_log
+2026-04-17T16:59:40.560+10:00 D t0 log_format_loader.cc:88 Loading format -- mysql_gen_log
+2026-04-17T16:59:40.560+10:00 D t0 log_format_loader.cc:88 Loading format -- mysql_slow_log
+2026-04-17T16:59:40.560+10:00 D t0 log_format_loader.cc:88 Loading format -- nextcloud
+2026-04-17T16:59:40.560+10:00 D t0 log_format_loader.cc:88 Loading format -- nextflow_log
+2026-04-17T16:59:40.560+10:00 D t0 log_format_loader.cc:88 Loading format -- openam_log
+2026-04-17T16:59:40.560+10:00 D t0 log_format_loader.cc:88 Loading format -- openamdb_log
+2026-04-17T16:59:40.560+10:00 D t0 log_format_loader.cc:88 Loading format -- openstack_log
+2026-04-17T16:59:40.560+10:00 D t0 log_format_loader.cc:88 Loading format -- otlp_python_log
+2026-04-17T16:59:40.560+10:00 D t0 log_format_loader.cc:88 Loading format -- page_log
+2026-04-17T16:59:40.560+10:00 D t0 log_format_loader.cc:88 Loading format -- pcap_log
+2026-04-17T16:59:40.560+10:00 D t0 log_format_loader.cc:88 Loading format -- pino_log
+2026-04-17T16:59:40.561+10:00 D t0 log_format_loader.cc:88 Loading format -- postgres_log
+2026-04-17T16:59:40.561+10:00 D t0 log_format_loader.cc:88 Loading format -- procstate_log
+2026-04-17T16:59:40.561+10:00 D t0 log_format_loader.cc:88 Loading format -- proxifier_log
+2026-04-17T16:59:40.561+10:00 D t0 log_format_loader.cc:88 Loading format -- rails_log
+2026-04-17T16:59:40.561+10:00 D t0 log_format_loader.cc:88 Loading format -- redis_log
+2026-04-17T16:59:40.561+10:00 D t0 log_format_loader.cc:88 Loading format -- simple_rs_log
+2026-04-17T16:59:40.561+10:00 D t0 log_format_loader.cc:88 Loading format -- snaplogic_log
+2026-04-17T16:59:40.561+10:00 D t0 log_format_loader.cc:88 Loading format -- spdlog_log
+2026-04-17T16:59:40.561+10:00 D t0 log_format_loader.cc:88 Loading format -- sssd_log
+2026-04-17T16:59:40.561+10:00 D t0 log_format_loader.cc:88 Loading format -- strace_log
+2026-04-17T16:59:40.561+10:00 D t0 log_format_loader.cc:88 Loading format -- sudo_log
+2026-04-17T16:59:40.561+10:00 D t0 log_format_loader.cc:88 Loading format -- syslog_log
+2026-04-17T16:59:40.562+10:00 D t0 log_format_loader.cc:88 Loading format -- s3_log
+2026-04-17T16:59:40.562+10:00 D t0 log_format_loader.cc:88 Loading format -- tcf_log
+2026-04-17T16:59:40.562+10:00 D t0 log_format_loader.cc:88 Loading format -- tcsh_history
+2026-04-17T16:59:40.562+10:00 D t0 log_format_loader.cc:88 Loading format -- unifi_log
+2026-04-17T16:59:40.562+10:00 D t0 log_format_loader.cc:88 Loading format -- uwsgi_log
+2026-04-17T16:59:40.562+10:00 D t0 log_format_loader.cc:88 Loading format -- vdsm_log
+2026-04-17T16:59:40.562+10:00 D t0 log_format_loader.cc:88 Loading format -- vmk_log
+2026-04-17T16:59:40.562+10:00 D t0 log_format_loader.cc:88 Loading format -- vmw_log
+2026-04-17T16:59:40.563+10:00 D t0 log_format_loader.cc:88 Loading format -- vmw_vc_svc_log
+2026-04-17T16:59:40.563+10:00 D t0 log_format_loader.cc:88 Loading format -- vmw_py_log
+2026-04-17T16:59:40.563+10:00 D t0 log_format_loader.cc:88 Loading format -- vpostgres_log
+2026-04-17T16:59:40.563+10:00 D t0 log_format_loader.cc:88 Loading format -- web_robot_log
+2026-04-17T16:59:40.563+10:00 D t0 log_format_loader.cc:88 Loading format -- xmlrpc_log
+2026-04-17T16:59:40.564+10:00 D t0 log_format_loader.cc:88 Loading format -- zap_console_log
+2026-04-17T16:59:40.564+10:00 D t0 log_format_loader.cc:88 Loading format -- zellijFmt
+2026-04-17T16:59:40.564+10:00 D t0 log_format_loader.cc:88 Loading format -- zookeeper_log
+2026-04-17T16:59:40.564+10:00 I t0 log_format_loader.cc:1371 loading formats from path: /etc/lnav/formats/*/*.json
+2026-04-17T16:59:40.564+10:00 I t0 log_format_loader.cc:1371 loading formats from path: /opt/homebrew/Cellar/lnav/0.13.2/etc/lnav/formats/*/*.json
+2026-04-17T16:59:40.564+10:00 I t0 log_format_loader.cc:1371 loading formats from path: /Users/hpalmer/.config/lnav/formats/*/*.json
+2026-04-17T16:59:40.564+10:00 W t0 log_format.cc:3640 /alb_log/regex/std:body field 'body' not found in pattern
+2026-04-17T16:59:40.564+10:00 W t0 log_format.cc:3628 /block_log/regex/sq-brackets:level field 'level' not found in pattern
+2026-04-17T16:59:40.564+10:00 W t0 log_format.cc:3628 /block_log/regex/std:level field 'level' not found in pattern
+2026-04-17T16:59:40.564+10:00 W t0 log_format.cc:3628 /candlepin_log/regex/other:level field 'level' not found in pattern
+2026-04-17T16:59:40.564+10:00 W t0 log_format.cc:3628 /candlepin_log/regex/reqorg:level field 'level' not found in pattern
+2026-04-17T16:59:40.564+10:00 W t0 log_format.cc:3628 /cloudvm_ram_log/regex/std:level field 'level' not found in pattern
+2026-04-17T16:59:40.564+10:00 W t0 log_format_loader.cc:1453 Format collision, format 'cups_log' matches sample from 'error_log'
+2026-04-17T16:59:40.564+10:00 W t0 log_format.cc:3628 /dpkg_log/regex/std:level field 'level' not found in pattern
+2026-04-17T16:59:40.564+10:00 W t0 log_format_loader.cc:1453 Format collision, format 'error_log' matches sample from 'cups_log'
+2026-04-17T16:59:40.564+10:00 W t0 log_format_loader.cc:1453 Format collision, format 'error_log' matches sample from 'java_log'
+2026-04-17T16:59:40.564+10:00 W t0 log_format_loader.cc:1453 Format collision, format 'error_log' matches sample from 'spdlog_log'
+2026-04-17T16:59:40.565+10:00 W t0 log_format_loader.cc:1453 Format collision, format 'esx_syslog_log' matches sample from 'vmk_log'
+2026-04-17T16:59:40.565+10:00 W t0 log_format_loader.cc:1453 Format collision, format 'esx_syslog_log' matches sample from 'vmw_log'
+2026-04-17T16:59:40.565+10:00 W t0 log_format.cc:3628 /fsck_hfs_log/regex/std:level field 'level' not found in pattern
+2026-04-17T16:59:40.565+10:00 W t0 log_format.cc:3628 /haproxy_log/regex/event_started:level field 'level' not found in pattern
+2026-04-17T16:59:40.565+10:00 W t0 log_format.cc:3640 /haproxy_log/regex/event_started:body field 'body' not found in pattern
+2026-04-17T16:59:40.565+10:00 W t0 log_format.cc:3628 /haproxy_log/regex/event_stopped:level field 'level' not found in pattern
+2026-04-17T16:59:40.565+10:00 W t0 log_format.cc:3640 /haproxy_log/regex/event_stopped:body field 'body' not found in pattern
+2026-04-17T16:59:40.565+10:00 W t0 log_format.cc:3628 /haproxy_log/regex/event_stopping:level field 'level' not found in pattern
+2026-04-17T16:59:40.565+10:00 W t0 log_format.cc:3640 /haproxy_log/regex/event_stopping:body field 'body' not found in pattern
+2026-04-17T16:59:40.565+10:00 W t0 log_format.cc:3628 /haproxy_log/regex/http:level field 'level' not found in pattern
+2026-04-17T16:59:40.565+10:00 W t0 log_format.cc:3640 /haproxy_log/regex/http:body field 'body' not found in pattern
+2026-04-17T16:59:40.565+10:00 W t0 log_format.cc:3628 /haproxy_log/regex/ssl:level field 'level' not found in pattern
+2026-04-17T16:59:40.565+10:00 W t0 log_format.cc:3640 /haproxy_log/regex/ssl:body field 'body' not found in pattern
+2026-04-17T16:59:40.565+10:00 W t0 log_format.cc:3628 /haproxy_log/regex/tcp:level field 'level' not found in pattern
+2026-04-17T16:59:40.565+10:00 W t0 log_format.cc:3640 /haproxy_log/regex/tcp:body field 'body' not found in pattern
+2026-04-17T16:59:40.565+10:00 W t0 log_format.cc:3628 /java_log/regex/otel2:level field 'level' not found in pattern
+2026-04-17T16:59:40.565+10:00 W t0 log_format.cc:3628 /java_log/regex/repeated:level field 'level' not found in pattern
+2026-04-17T16:59:40.565+10:00 W t0 log_format.cc:3640 /java_log/regex/repeated:body field 'body' not found in pattern
+2026-04-17T16:59:40.565+10:00 W t0 log_format_loader.cc:1453 Format collision, format 'java_log' matches sample from 'otlp_python_log'
+2026-04-17T16:59:40.565+10:00 W t0 log_format_loader.cc:1453 Format collision, format 'java_log' matches sample from 'postgres_log'
+2026-04-17T16:59:40.565+10:00 W t0 log_format_loader.cc:1453 Format collision, format 'java_log' matches sample from 'vmw_log'
+2026-04-17T16:59:40.565+10:00 W t0 log_format.cc:3640 /katello_log/regex/log:body field 'body' not found in pattern
+2026-04-17T16:59:40.565+10:00 W t0 log_format.cc:3628 /mysql_gen_log/regex/std:level field 'level' not found in pattern
+2026-04-17T16:59:40.565+10:00 W t0 log_format.cc:3628 /mysql_slow_log/regex/abbrev:level field 'level' not found in pattern
+2026-04-17T16:59:40.565+10:00 W t0 log_format.cc:3640 /mysql_slow_log/regex/abbrev:body field 'body' not found in pattern
+2026-04-17T16:59:40.565+10:00 W t0 log_format.cc:3628 /mysql_slow_log/regex/std:level field 'level' not found in pattern
+2026-04-17T16:59:40.565+10:00 W t0 log_format.cc:3640 /mysql_slow_log/regex/std:body field 'body' not found in pattern
+2026-04-17T16:59:40.566+10:00 W t0 log_format.cc:3628 /openamdb_log/regex/std:level field 'level' not found in pattern
+2026-04-17T16:59:40.566+10:00 W t0 log_format_loader.cc:1453 Format collision, format 'openstack_log' matches sample from 's3_log'
+2026-04-17T16:59:40.566+10:00 W t0 log_format.cc:3628 /page_log/regex/1.7:level field 'level' not found in pattern
+2026-04-17T16:59:40.566+10:00 W t0 log_format.cc:3628 /page_log/regex/pre-1.7:level field 'level' not found in pattern
+2026-04-17T16:59:40.566+10:00 W t0 log_format.cc:3640 /page_log/regex/pre-1.7:body field 'body' not found in pattern
+2026-04-17T16:59:40.566+10:00 I t0 log_format.cc:3704 preparing file-format header expression: SELECT 1 WHERE :header REGEXP '^6274736e6f6f7000.*'
+2026-04-17T16:59:40.566+10:00 I t0 log_format.cc:3704 preparing file-format header expression: SELECT 1 WHERE :header REGEXP '^(?:a1b2c3d4|d4c3b2a1|a1b23c4d|4d3cb2a1).*'
+2026-04-17T16:59:40.566+10:00 I t0 log_format.cc:3704 preparing file-format header expression: SELECT 1 WHERE :header REGEXP '^0a0d0d0a.{8}(?:1a2b3c4d|4d3c2b1a).*'
+2026-04-17T16:59:40.566+10:00 I t0 log_format.cc:3704 preparing file-format header expression: SELECT 1 WHERE :header REGEXP '^736e6f6f70000000.*'
+2026-04-17T16:59:40.566+10:00 W t0 log_format.cc:3628 /procstate_log/regex/std:level field 'level' not found in pattern
+2026-04-17T16:59:40.566+10:00 W t0 log_format.cc:3628 /proxifier_log/regex/std:level field 'level' not found in pattern
+2026-04-17T16:59:40.566+10:00 W t0 log_format.cc:3628 /redis_log/regex/sig:level field 'level' not found in pattern
+2026-04-17T16:59:40.566+10:00 W t0 log_format.cc:3640 /s3_log/regex/std:body field 'body' not found in pattern
+2026-04-17T16:59:40.566+10:00 W t0 log_format.cc:3640 /s3_log/regex/std-v2:body field 'body' not found in pattern
+2026-04-17T16:59:40.566+10:00 W t0 log_format.cc:3628 /strace_log/regex/exit:level field 'errno' not found in pattern
+2026-04-17T16:59:40.566+10:00 W t0 log_format.cc:3640 /strace_log/regex/exit:body field 'body' not found in pattern
+2026-04-17T16:59:40.566+10:00 W t0 log_format.cc:3628 /strace_log/regex/signal:level field 'errno' not found in pattern
+2026-04-17T16:59:40.566+10:00 W t0 log_format.cc:3640 /strace_log/regex/signal:body field 'body' not found in pattern
+2026-04-17T16:59:40.566+10:00 W t0 log_format.cc:3640 /sudo_log/regex/std:body field 'body' not found in pattern
+2026-04-17T16:59:40.566+10:00 W t0 log_format_loader.cc:1453 Format collision, format 'syslog_log' matches sample from 'elb_log'
+2026-04-17T16:59:40.566+10:00 W t0 log_format_loader.cc:1453 Format collision, format 'syslog_log' matches sample from 'esx_syslog_log'
+2026-04-17T16:59:40.566+10:00 W t0 log_format_loader.cc:1453 Format collision, format 'syslog_log' matches sample from 'haproxy_log'
+2026-04-17T16:59:40.566+10:00 W t0 log_format_loader.cc:1453 Format collision, format 'syslog_log' matches sample from 'java_log'
+2026-04-17T16:59:40.566+10:00 W t0 log_format_loader.cc:1453 Format collision, format 'syslog_log' matches sample from 'lnav_debug_log'
+2026-04-17T16:59:40.566+10:00 W t0 log_format_loader.cc:1453 Format collision, format 'syslog_log' matches sample from 'unifi_log'
+2026-04-17T16:59:40.566+10:00 W t0 log_format_loader.cc:1453 Format collision, format 'syslog_log' matches sample from 'vmk_log'
+2026-04-17T16:59:40.566+10:00 W t0 log_format_loader.cc:1453 Format collision, format 'syslog_log' matches sample from 'vmw_log'
+2026-04-17T16:59:40.566+10:00 W t0 log_format.cc:3628 /tcf_log/regex/std:level field 'level' not found in pattern
+2026-04-17T16:59:40.566+10:00 W t0 log_format.cc:3628 /tcsh_history/regex/std:level field 'level' not found in pattern
+2026-04-17T16:59:40.567+10:00 W t0 log_format.cc:3640 /vmw_log/regex/esx-section:body field 'body' not found in pattern
+2026-04-17T16:59:40.567+10:00 W t0 log_format.cc:3628 /vmw_log/regex/hdr-ftr:level field 'level' not found in pattern
+2026-04-17T16:59:40.567+10:00 W t0 log_format.cc:3628 /vmw_log/regex/section:level field 'level' not found in pattern
+2026-04-17T16:59:40.567+10:00 W t0 log_format.cc:3640 /vmw_log/regex/section:body field 'body' not found in pattern
+2026-04-17T16:59:40.567+10:00 W t0 log_format_loader.cc:1453 Format collision, format 'vmw_log' matches sample from 'esx_syslog_log'
+2026-04-17T16:59:40.567+10:00 W t0 log_format_loader.cc:1453 Format collision, format 'vpostgres_log' matches sample from 'postgres_log'
+2026-04-17T16:59:40.567+10:00 W t0 log_format.cc:3628 /xmlrpc_log/regex/main:level field 'level' not found in pattern
+2026-04-17T16:59:40.567+10:00 W t0 log_format_loader.cc:1482 Detected a cycle...
+2026-04-17T16:59:40.567+10:00 W t0 log_format_loader.cc:1486   Skipping builtin format -- cups_log
+2026-04-17T16:59:40.567+10:00 W t0 log_format_loader.cc:1486   Skipping builtin format -- error_log
+2026-04-17T16:59:40.567+10:00 W t0 log_format_loader.cc:1486   Skipping builtin format -- esx_syslog_log
+2026-04-17T16:59:40.567+10:00 W t0 log_format_loader.cc:1486   Skipping builtin format -- java_log
+2026-04-17T16:59:40.567+10:00 W t0 log_format_loader.cc:1486   Skipping builtin format -- syslog_log
+2026-04-17T16:59:40.567+10:00 W t0 log_format_loader.cc:1486   Skipping builtin format -- vmw_log
+2026-04-17T16:59:40.567+10:00 W t0 log_format_loader.cc:1482 Detected a cycle...
+2026-04-17T16:59:40.567+10:00 W t0 log_format_loader.cc:1486   Skipping builtin format -- error_log
+2026-04-17T16:59:40.567+10:00 W t0 log_format_loader.cc:1486   Skipping builtin format -- esx_syslog_log
+2026-04-17T16:59:40.567+10:00 W t0 log_format_loader.cc:1486   Skipping builtin format -- java_log
+2026-04-17T16:59:40.567+10:00 W t0 log_format_loader.cc:1486   Skipping builtin format -- syslog_log
+2026-04-17T16:59:40.567+10:00 W t0 log_format_loader.cc:1486   Skipping builtin format -- vmw_log
+2026-04-17T16:59:40.567+10:00 W t0 log_format_loader.cc:1482 Detected a cycle...
+2026-04-17T16:59:40.567+10:00 W t0 log_format_loader.cc:1486   Skipping builtin format -- esx_syslog_log
+2026-04-17T16:59:40.567+10:00 W t0 log_format_loader.cc:1486   Skipping builtin format -- java_log
+2026-04-17T16:59:40.567+10:00 W t0 log_format_loader.cc:1486   Skipping builtin format -- syslog_log
+2026-04-17T16:59:40.567+10:00 W t0 log_format_loader.cc:1486   Skipping builtin format -- vmw_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1507 Format order:
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   access_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   alb_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   block_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   bunyan_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   caddy_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   candlepin_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   choose_repo_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   cloudflare_json_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   cloudvm_ram_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   dpkg_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   ecs_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   elb_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   engine_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   env_logger_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   fsck_hfs_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   github_events_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   glog_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   haproxy_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   journald_json_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   katello_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   laravel_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   lnav_debug_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   mysql_error_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   mysql_gen_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   mysql_slow_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   nextcloud
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   nextflow_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   openam_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   openamdb_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   otlp_python_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   page_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   pcap_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   pino_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   postgres_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   procstate_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   proxifier_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   rails_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   redis_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   s3_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   simple_rs_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   snaplogic_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   spdlog_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   sssd_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   strace_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   sudo_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   tcf_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   tcsh_history
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   unifi_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   uwsgi_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   vdsm_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   vmk_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   vmw_py_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   vmw_vc_svc_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   web_robot_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   xmlrpc_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   zap_console_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   zellijFmt
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   zookeeper_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   openstack_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   vpostgres_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   cups_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   error_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   esx_syslog_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   vmw_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   java_log
+2026-04-17T16:59:40.567+10:00 I t0 log_format_loader.cc:1510   syslog_log
+2026-04-17T16:59:40.568+10:00 D t0 log_vtab_impl.cc:398 creating log format table: all_logs = 0x600001fd8ac0
+2026-04-17T16:59:40.568+10:00 D t0 log_vtab_impl.cc:398 creating log format table: generic_log = 0x600001fd8b00
+2026-04-17T16:59:40.568+10:00 D t0 log_vtab_impl.cc:398 creating log format table: lnav_piper_log = 0x600001fd8c00
+2026-04-17T16:59:40.568+10:00 I t0 lnav.cc:3548 BEGIN registering format tables
+2026-04-17T16:59:40.568+10:00 D t0 log_vtab_impl.cc:398 creating log format table: logfmt_log = 0x600001fd8c40
+2026-04-17T16:59:40.568+10:00 D t0 log_vtab_impl.cc:398 creating log format table: access_log = 0x600001fd8cc0
+2026-04-17T16:59:40.568+10:00 D t0 log_vtab_impl.cc:398 creating log format table: alb_log = 0x600001fd8d40
+2026-04-17T16:59:40.568+10:00 D t0 log_vtab_impl.cc:398 creating log format table: block_log = 0x600001fd8dc0
+2026-04-17T16:59:40.568+10:00 D t0 log_vtab_impl.cc:398 creating log format table: bunyan_log = 0x600001fd8e40
+2026-04-17T16:59:40.568+10:00 D t0 log_vtab_impl.cc:398 creating log format table: caddy_log = 0x600001fd8ec0
+2026-04-17T16:59:40.568+10:00 D t0 log_vtab_impl.cc:398 creating log format table: candlepin_log = 0x600001fd8f00
+2026-04-17T16:59:40.568+10:00 D t0 log_vtab_impl.cc:398 creating log format table: choose_repo_log = 0x600001fd8f80
+2026-04-17T16:59:40.568+10:00 D t0 log_vtab_impl.cc:398 creating log format table: cloudflare_json_log = 0x600001fd9000
+2026-04-17T16:59:40.568+10:00 D t0 log_vtab_impl.cc:398 creating log format table: cloudvm_ram_log = 0x600001fd9080
+2026-04-17T16:59:40.568+10:00 D t0 log_vtab_impl.cc:398 creating log format table: dpkg_log = 0x600001fd9140
+2026-04-17T16:59:40.568+10:00 D t0 log_vtab_impl.cc:398 creating log format table: ecs_log = 0x600001fd91c0
+2026-04-17T16:59:40.568+10:00 D t0 log_vtab_impl.cc:398 creating log format table: elb_log = 0x600001fd9240
+2026-04-17T16:59:40.568+10:00 D t0 log_vtab_impl.cc:398 creating log format table: engine_log = 0x600001fd92c0
+2026-04-17T16:59:40.568+10:00 D t0 log_vtab_impl.cc:398 creating log format table: env_logger_log = 0x600001fd9300
+2026-04-17T16:59:40.568+10:00 D t0 log_vtab_impl.cc:398 creating log format table: fsck_hfs_log = 0x600001fd9380
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: github_events_log = 0x600001fd9400
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: glog_log = 0x600001fd94c0
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: haproxy_log = 0x600001fd9500
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: journald_json_log = 0x600001fd9580
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: katello_log = 0x600001fd9600
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: laravel_log = 0x600001fd9680
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: lnav_debug_log = 0x600001fd9700
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: mysql_error_log = 0x600001fd9780
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: mysql_gen_log = 0x600001fd9800
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: mysql_slow_log = 0x600001fd9880
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: nextcloud = 0x600001fd9940
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: nextflow_log = 0x600001fd9980
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: openam_log = 0x600001fd9a40
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: openamdb_log = 0x600001fd9a80
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: otlp_python_log = 0x600001fd9b00
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: page_log = 0x600001fd9bc0
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: pcap_log = 0x600001fd9c40
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: pino_log = 0x600001fd9cc0
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: postgres_log = 0x600001fd9d00
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: procstate_log = 0x600001fd9d80
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: proxifier_log = 0x600001fd9e00
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: rails_log = 0x600001fd9ec0
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: redis_log = 0x600001fd9f40
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: s3_log = 0x600001fd9fc0
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: simple_rs_log = 0x600001fda000
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: snaplogic_log = 0x600001fda080
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: spdlog_log = 0x600001fda140
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: sssd_log = 0x600001fda1c0
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: strace_log = 0x600001fda240
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: sudo_log = 0x600001fda2c0
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: tcf_log = 0x600001fda340
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: tcsh_history = 0x600001fda380
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: unifi_log = 0x600001fda440
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: uwsgi_log = 0x600001fda4c0
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: vdsm_log = 0x600001fda540
+2026-04-17T16:59:40.569+10:00 D t0 log_vtab_impl.cc:398 creating log format table: vmk_log = 0x600001fda5c0
+2026-04-17T16:59:40.570+10:00 D t0 log_vtab_impl.cc:398 creating log format table: vmw_py_log = 0x600001fda640
+2026-04-17T16:59:40.570+10:00 D t0 log_vtab_impl.cc:398 creating log format table: vmw_vc_svc_log = 0x600001fda680
+2026-04-17T16:59:40.570+10:00 D t0 log_vtab_impl.cc:398 creating log format table: web_robot_log = 0x600001fda740
+2026-04-17T16:59:40.570+10:00 D t0 log_vtab_impl.cc:398 creating log format table: xmlrpc_log = 0x600001fda7c0
+2026-04-17T16:59:40.570+10:00 D t0 log_vtab_impl.cc:398 creating log format table: zap_console_log = 0x600001fda800
+2026-04-17T16:59:40.570+10:00 D t0 log_vtab_impl.cc:398 creating log format table: zellijFmt = 0x600001fda8c0
+2026-04-17T16:59:40.570+10:00 D t0 log_vtab_impl.cc:398 creating log format table: zookeeper_log = 0x600001fda900
+2026-04-17T16:59:40.570+10:00 D t0 log_vtab_impl.cc:398 creating log format table: openstack_log = 0x600001fda980
+2026-04-17T16:59:40.570+10:00 D t0 log_vtab_impl.cc:398 creating log format table: vpostgres_log = 0x600001fdaa00
+2026-04-17T16:59:40.570+10:00 D t0 log_vtab_impl.cc:398 creating log format table: cups_log = 0x600001fdaac0
+2026-04-17T16:59:40.570+10:00 D t0 log_vtab_impl.cc:398 creating log format table: error_log = 0x600001fdab40
+2026-04-17T16:59:40.570+10:00 D t0 log_vtab_impl.cc:398 creating log format table: esx_syslog_log = 0x600001fdab80
+2026-04-17T16:59:40.570+10:00 D t0 log_vtab_impl.cc:398 creating log format table: vmw_log = 0x600001fdac40
+2026-04-17T16:59:40.570+10:00 D t0 log_vtab_impl.cc:398 creating log format table: java_log = 0x600001fdacc0
+2026-04-17T16:59:40.570+10:00 D t0 log_vtab_impl.cc:398 creating log format table: syslog_log = 0x600001fdad40
+2026-04-17T16:59:40.570+10:00 I t0 lnav.cc:3556 END registering format tables
+2026-04-17T16:59:40.570+10:00 I t0 log_format_loader.cc:1530 executing SQL files in path: /etc/lnav/formats/*/*.sql
+2026-04-17T16:59:40.570+10:00 I t0 log_format_loader.cc:1530 executing SQL files in path: /opt/homebrew/Cellar/lnav/0.13.2/etc/lnav/formats/*/*.sql
+2026-04-17T16:59:40.570+10:00 I t0 log_format_loader.cc:1530 executing SQL files in path: /Users/hpalmer/.config/lnav/formats/*/*.sql
+2026-04-17T16:59:40.570+10:00 I t0 log_format_loader.cc:1537 Executing SQL file: /Users/hpalmer/.config/lnav/formats/default/zookeeper.sql
+2026-04-17T16:59:40.570+10:00 D t0 sql_util.cc:1392 retcode 0  0x600003d92aa1 0x600003d92b44
+2026-04-17T16:59:40.570+10:00 D t0 sql_util.cc:1392 retcode 0  0x600003d92b45 0x600003d92b45
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<ServiceName>\S+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<AllocatedMB>-?\d+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1481     incomplete match
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<MaxMB>-?\d+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1481     incomplete match
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<CurrentMB>-?\d+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1481     incomplete match
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<CurrRSS>-?\d+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1481     incomplete match
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<Cache>-?\d+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1481     incomplete match
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<MapFiles>-?\d+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1481     incomplete match
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<MemoryLimit>-?\d+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1481     incomplete match
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 D t0 log_vtab_impl.cc:398 creating log format table: cloudvm_ram_sizes = 0x600001fdad80
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<blk_src>[^,]+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<blk_dest>[^,]+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<blk_bytes>\d+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1481     incomplete match
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<blk_op>[^,]+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<blk_cliid>[^,]+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<blk_offset>[^,]+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<blk_srvid>[^,]+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<blk_id>[^,]+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<blk_duration>\d+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1481     incomplete match
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 D t0 log_vtab_impl.cc:398 creating log format table: hdfs_finalized_blocks = 0x600001fdae00
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<session_id>0x[a-zA-Z0-9]+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 127.0.0.1
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123ms
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123 ms
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123KB
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123 KB
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123Kbps
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0 Kbps
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0KB
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0 KB
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0Kbps
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0 Kbps
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 D t0 log_vtab_impl.cc:398 creating log format table: zk_established_session_id = 0x600001fdaf00
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<user>[^\s]+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<host>[^ ]*)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<conn_id>\d+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1481     incomplete match
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<schema>[^\s]+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<last_errno>\d+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1481     incomplete match
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<killed>\d+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1481     incomplete match
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<query_time>\d+\.\d+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<lock_time>\d+\.\d+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<rows_sent>\d+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1481     incomplete match
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<rows_examined>\d+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1481     incomplete match
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<rows_affected>\d+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1481     incomplete match
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<bytes_sent>\d+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1481     incomplete match
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<query>.*)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 D t0 log_vtab_impl.cc:398 creating log format table: mysql_slow_stats = 0x600001fdaf80
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<user>\S+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<ppid>\d+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1481     incomplete match
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<pid>\d+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1481     incomplete match
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<cpu_pct>\d+(?:\.\d+)?)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<mem_pct>\d+(?:\.\d+)?)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<vsz>\d+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1481     incomplete match
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<rss>\d+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1481     incomplete match
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<tty>\S+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<stat>\S+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<start_time>\S+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<cpu_time>\S+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<maj_flt>\d+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1481     incomplete match
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<min_flt>\d+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1481     incomplete match
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<cmd_name>[^ \n]+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<cmd_args>[^\n]+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<cmd>(?<cmd_name>[^ \n]+)(?: (?<cmd_args>[^\n]+))?)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 D t0 log_vtab_impl.cc:398 creating log format table: procstate_procs = 0x600001fdb000
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<lro_id>\S+)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<entity>\S*)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<operation>\S*)
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<SessionId>[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 127.0.0.1
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123ms
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123 ms
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123KB
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123 KB
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123Kbps
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0 Kbps
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0KB
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0 KB
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1466   testing sample: 123.0Kbps
+2026-04-17T16:59:40.570+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123.0 Kbps
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<SessionSubId>[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123.0
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 127.0.0.1
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123ms
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123 ms
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123KB
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123 KB
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123Kbps
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123.0 Kbps
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123.0KB
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123.0 KB
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123.0Kbps
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123.0 Kbps
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 D t0 log_vtab_impl.cc:398 creating log format table: vpx_lro_begin = 0x600001fdb080
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<lro_id>\S+)
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<SessionId>[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123.0
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 127.0.0.1
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123ms
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123 ms
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123KB
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123 KB
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123Kbps
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123.0 Kbps
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123.0KB
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123.0 KB
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123.0Kbps
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123.0 Kbps
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<SessionSubId>[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123.0
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 127.0.0.1
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123ms
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123 ms
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123KB
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123 KB
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123Kbps
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123.0 Kbps
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123.0KB
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123.0 KB
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123.0Kbps
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123.0 Kbps
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<entity>\S*)
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<operation>\S*)
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<error>.*)
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.571+10:00 D t0 log_vtab_impl.cc:398 creating log format table: vpx_lro_error = 0x600001fdb100
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<lro_id>\S+)
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.571+10:00 D t0 log_vtab_impl.cc:398 creating log format table: vpx_lro_finish = 0x600001fdb140
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<SessionId>[^']+)
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<Username>[^']+)
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<ProfileKey>[^ ]+)
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<ProfileValue>[^\n]+)
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.571+10:00 D t0 log_vtab_impl.cc:398 creating log format table: vpxd_session_pool_stats = 0x600001fdb200
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<SessionId>[^']+)
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<Username>[^']+)
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<ClientIP>[^']+)
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<ProfileKey>[^ ]+)
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<ProfileValue>[^\n]+)
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.571+10:00 D t0 log_vtab_impl.cc:398 creating log format table: vpxd_session_stats = 0x600001fdb280
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<session_id>0x[a-zA-Z0-9]+)
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123.0
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 127.0.0.1
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123ms
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123 ms
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123KB
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123 KB
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123Kbps
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123.0 Kbps
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123.0KB
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123.0 KB
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123.0Kbps
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: 123.0 Kbps
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1479     mismatch
+2026-04-17T16:59:40.571+10:00 D t0 log_vtab_impl.cc:398 creating log format table: zk_commit_session_id = 0x600001fdb300
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<my_state>\w+)
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1453 guessing SQL type from pattern: (?<nvalues>.*)
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1466   testing sample: foobar
+2026-04-17T16:59:40.571+10:00 I t0 sql_util.cc:1474     matched!
+2026-04-17T16:59:40.571+10:00 D t0 log_vtab_impl.cc:398 creating log format table: zk_notifications = 0x600001fdb380
+2026-04-17T16:59:40.571+10:00 D t0 isc.cc:43 starting service thread for: isc::service<curl_looper>::service(const std::string &) [T = curl_looper] 
+2026-04-17T16:59:40.571+10:00 D t0 isc.cc:43 starting service thread for: isc::service<io_looper>::service(const std::string &) [T = io_looper] 
+2026-04-17T16:59:40.571+10:00 I t1 isc.cc:51 BEGIN isc thread: isc::service<curl_looper>::service(const std::string &) [T = curl_looper] 
+2026-04-17T16:59:40.571+10:00 I t2 isc.cc:51 BEGIN isc thread: isc::service<io_looper>::service(const std::string &) [T = io_looper] 
+2026-04-17T16:59:40.571+10:00 D t0 isc.cc:43 starting service thread for: isc::service<tailer::looper>::service(const std::string &) [T = tailer::looper] 
+2026-04-17T16:59:40.571+10:00 I t3 piper.looper.cc:356 starting loop to capture: stdin (5 -1)
+2026-04-17T16:59:40.571+10:00 I t0 lnav.cc:3910 startup: lnav 0.13.2
+2026-04-17T16:59:40.571+10:00 I t4 isc.cc:51 BEGIN isc thread: isc::service<tailer::looper>::service(const std::string &) [T = tailer::looper] 
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:206 uname:
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:207   sysname=Darwin
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:208   nodename=NEPAUJ9R2H61XWD
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:209   machine=arm64
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:210   release=24.5.0
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:211   version=Darwin Kernel Version 24.5.0: Tue Apr 22 19:54:43 PDT 2025; root:xnu-11417.121.6~2/RELEASE_ARM64_T8132
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:212 PCRE:
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:213   jit=0
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:214   jittarget=
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:215 Environment:
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:216   HOME=/Users/hpalmer
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:217   XDG_CONFIG_HOME=(null)
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:218   LANG=en_AU.UTF-8
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:219   PATH=/Users/hpalmer/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/usr/local/go/bin:/Applications/Ghostty.app/Contents/MacOS:/Users/hpalmer/go/bin:/Applications/Obsidian.app/Contents/MacOS:/Users/hpalmer/go/bin
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:220   TERM=tmux-256color
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:221   TZ=(null)
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:222 Process:
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:223   pid=12932
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:224   ppid=27994
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:225   pgrp=12931
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:226   uid=502
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:227   gid=20
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:228   euid=502
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:229   egid=20
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:233   cwd=/Users/hpalmer/Documents/Projects/tfc-routestate-graph
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:235 Executable:
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:236   version=lnav 0.13.2
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:237   mtime=1772142896
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:240 rusage:
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:240   utime=0.042164
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:240   stime=0.015686
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:240   maxrss=18694144
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:240   ixrss=0
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:240   idrss=0
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:240   isrss=0
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:240   minflt=1491
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:240   majflt=22
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:240   nswap=0
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:240   inblock=0
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:240   oublock=0
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:240   msgsnd=0
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:240   msgrcv=0
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:240   nsignals=0
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:240   nvcsw=0
+2026-04-17T16:59:40.571+10:00 I t0 lnav_log.cc:240   nivcsw=54
+2026-04-17T16:59:40.571+10:00 I t0 lnav.cc:3912 Libraries:
+2026-04-17T16:59:40.571+10:00 I t0 lnav.cc:3914   bzip=1.0.8, 13-Jul-2019
+2026-04-17T16:59:40.571+10:00 I t0 lnav.cc:3917   curl=8.7.1 (2024-03-27)
+2026-04-17T16:59:40.571+10:00 I t0 lnav.cc:3920   libarchive=3008005
+2026-04-17T16:59:40.571+10:00 I t0 lnav.cc:3921     details=libarchive 3.7.4 zlib/1.2.12 liblzma/5.4.3 bz2lib/1.0.8
+2026-04-17T16:59:40.571+10:00 I t0 lnav.cc:3923   notcurses=3.0.11
+2026-04-17T16:59:40.571+10:00 I t0 lnav.cc:3924   pcre2=10.42 2022-12-11
+2026-04-17T16:59:40.571+10:00 I t0 lnav.cc:3925   sqlite=3.51.2
+2026-04-17T16:59:40.571+10:00 I t0 lnav.cc:3926   zlib=1.2.12
+2026-04-17T16:59:40.571+10:00 I t0 lnav.cc:3927 lnav_data:
+2026-04-17T16:59:40.571+10:00 I t0 lnav.cc:3928   flags=0
+2026-04-17T16:59:40.571+10:00 I t0 lnav.cc:3929   commands:
+2026-04-17T16:59:40.571+10:00 I t0 lnav.cc:3936   files:
+2026-04-17T16:59:40.571+10:00 I t0 lnav.cc:3942     stdin
+2026-04-17T16:59:40.573+10:00 I t0 view_curses.cc:1541 notcurses detected terminal: tmux 3.5a
+2026-04-17T16:59:40.573+10:00 I t0 view_curses.cc:803 terminal supports RGB colors
+2026-04-17T16:59:40.573+10:00 I t0 view_curses.cc:1130 found 107 contrasting colors for highlights
+2026-04-17T16:59:40.573+10:00 I t0 view_curses.cc:1130 found 102 contrasting colors for highlights
+2026-04-17T16:59:40.573+10:00 I t0 view_curses.cc:1130 found 162 contrasting colors for highlights
+2026-04-17T16:59:40.573+10:00 I t0 view_curses.cc:1130 found 102 contrasting colors for highlights
+2026-04-17T16:59:40.573+10:00 I t0 view_curses.cc:1130 found 27 contrasting colors for highlights
+2026-04-17T16:59:40.573+10:00 I t0 view_curses.cc:1130 found 105 contrasting colors for highlights
+2026-04-17T16:59:40.573+10:00 I t0 view_curses.cc:1130 found 151 contrasting colors for highlights
+2026-04-17T16:59:40.573+10:00 I t0 view_curses.cc:1130 found 120 contrasting colors for highlights
+2026-04-17T16:59:40.573+10:00 I t0 view_curses.cc:1130 found 60 contrasting colors for highlights
+2026-04-17T16:59:40.573+10:00 I t0 view_curses.cc:1130 found 105 contrasting colors for highlights
+2026-04-17T16:59:40.574+10:00 I t0 command_executor.cc:647 Executing file: /Users/hpalmer/.config/lnav/session
+2026-04-17T16:59:40.574+10:00 D t0 log_format_loader.cc:1663 Searching for script in path: /etc/lnav/formats/*/*.lnav
+2026-04-17T16:59:40.574+10:00 D t0 log_format_loader.cc:1663 Searching for script in path: /etc/lnav/configs/*/*.lnav
+2026-04-17T16:59:40.574+10:00 D t0 log_format_loader.cc:1663 Searching for script in path: /opt/homebrew/Cellar/lnav/0.13.2/etc/lnav/formats/*/*.lnav
+2026-04-17T16:59:40.574+10:00 D t0 log_format_loader.cc:1663 Searching for script in path: /opt/homebrew/Cellar/lnav/0.13.2/etc/lnav/configs/*/*.lnav
+2026-04-17T16:59:40.574+10:00 D t0 log_format_loader.cc:1663 Searching for script in path: /Users/hpalmer/.config/lnav/formats/*/*.lnav
+2026-04-17T16:59:40.574+10:00 I t0 log_format_loader.cc:1675   found script: /Users/hpalmer/.config/lnav/formats/default/dhclient-summary.lnav
+2026-04-17T16:59:40.574+10:00 I t0 log_format_loader.cc:1675   found script: /Users/hpalmer/.config/lnav/formats/default/docker-url-handler.lnav
+2026-04-17T16:59:40.574+10:00 I t0 log_format_loader.cc:1675   found script: /Users/hpalmer/.config/lnav/formats/default/find-msg.lnav
+2026-04-17T16:59:40.574+10:00 I t0 log_format_loader.cc:1675   found script: /Users/hpalmer/.config/lnav/formats/default/journald-url-handler.lnav
+2026-04-17T16:59:40.574+10:00 I t0 log_format_loader.cc:1675   found script: /Users/hpalmer/.config/lnav/formats/default/lnav-copy-text.lnav
+2026-04-17T16:59:40.574+10:00 I t0 log_format_loader.cc:1675   found script: /Users/hpalmer/.config/lnav/formats/default/lnav-link-callback.lnav
+2026-04-17T16:59:40.574+10:00 I t0 log_format_loader.cc:1675   found script: /Users/hpalmer/.config/lnav/formats/default/lnav-pop-view.lnav
+2026-04-17T16:59:40.574+10:00 I t0 log_format_loader.cc:1675   found script: /Users/hpalmer/.config/lnav/formats/default/partition-by-boot.lnav
+2026-04-17T16:59:40.574+10:00 I t0 log_format_loader.cc:1675   found script: /Users/hpalmer/.config/lnav/formats/default/pg-annotate-errors.lnav
+2026-04-17T16:59:40.574+10:00 I t0 log_format_loader.cc:1675   found script: /Users/hpalmer/.config/lnav/formats/default/piper-url-handler.lnav
+2026-04-17T16:59:40.574+10:00 I t0 log_format_loader.cc:1675   found script: /Users/hpalmer/.config/lnav/formats/default/rename-stdin.lnav
+2026-04-17T16:59:40.574+10:00 I t0 log_format_loader.cc:1606 report-access-log (/Users/hpalmer/.config/lnav/formats/default/report-access-log.lnav): setting output format to 7
+2026-04-17T16:59:40.574+10:00 I t0 log_format_loader.cc:1675   found script: /Users/hpalmer/.config/lnav/formats/default/report-access-log.lnav
+2026-04-17T16:59:40.574+10:00 I t0 log_format_loader.cc:1675   found script: /Users/hpalmer/.config/lnav/formats/default/search-for.lnav
+2026-04-17T16:59:40.574+10:00 I t0 log_format_loader.cc:1675   found script: /Users/hpalmer/.config/lnav/formats/default/zk-set-ops.lnav
+2026-04-17T16:59:40.574+10:00 D t0 log_format_loader.cc:1663 Searching for script in path: /Users/hpalmer/.config/lnav/configs/*/*.lnav
+2026-04-17T16:59:40.574+10:00 I t0 view_helpers.cc:1669 changing mode from PAGING to FILES
+2026-04-17T16:59:40.574+10:00 I t0 lnav.cc:1808 initial rescan started
+2026-04-17T16:59:40.574+10:00 I t5 file_collection.cc:104 fd limit: 256; open file limit: 224
+2026-04-17T16:59:40.909+10:00 I t3 piper.match.cc:96 attempting to demux using: container
+2026-04-17T16:59:40.909+10:00 I t3 piper.match.cc:96 attempting to demux using: container-with-type
+2026-04-17T16:59:40.909+10:00 I t3 piper.match.cc:104   demuxer pattern matched
+2026-04-17T16:59:40.909+10:00 I t3 piper.match.cc:128   and required captures were found, using demuxer
+2026-04-17T16:59:40.909+10:00 I t3 piper.match.cc:96 attempting to demux using: recv-with-pod
+2026-04-17T16:59:40.909+10:00 I t3 piper.looper.cc:698 creating capturing file: stdin (mux_id: ) -- /var/folders/v2/q9fyj8xj79j0swdknql4jby40000gp/T/lnav-user-502-work/piper/p-7320949e7b3143e54f7b320f4522399e-000/tmp.1909f56bfc062723c751e8b465ee728b.0
+2026-04-17T16:59:40.910+10:00 I t3 piper.looper.cc:780   header size: 2762
+2026-04-17T16:59:40.910+10:00 D t6 file_format.cc:47 detecting format of file: /private/var/folders/v2/q9fyj8xj79j0swdknql4jby40000gp/T/lnav-user-502-work/piper/p-7320949e7b3143e54f7b320f4522399e-000/out.1909f56bfc062723c751e8b465ee728b.1
+2026-04-17T16:59:40.910+10:00 D t6 archive_manager.cc:92 read open /private/var/folders/v2/q9fyj8xj79j0swdknql4jby40000gp/T/lnav-user-502-work/piper/p-7320949e7b3143e54f7b320f4522399e-000/out.1909f56bfc062723c751e8b465ee728b.1
+2026-04-17T16:59:40.910+10:00 D t6 archive_manager.cc:99 read next header (null) /private/var/folders/v2/q9fyj8xj79j0swdknql4jby40000gp/T/lnav-user-502-work/piper/p-7320949e7b3143e54f7b320f4522399e-000/out.1909f56bfc062723c751e8b465ee728b.1
+2026-04-17T16:59:40.910+10:00 D t6 archive_manager.cc:101 read next done /private/var/folders/v2/q9fyj8xj79j0swdknql4jby40000gp/T/lnav-user-502-work/piper/p-7320949e7b3143e54f7b320f4522399e-000/out.1909f56bfc062723c751e8b465ee728b.1
+2026-04-17T16:59:40.910+10:00 I t6 file_format.cc:88 file does not have a known text format: /private/var/folders/v2/q9fyj8xj79j0swdknql4jby40000gp/T/lnav-user-502-work/piper/p-7320949e7b3143e54f7b320f4522399e-000/out.1909f56bfc062723c751e8b465ee728b.1
+2026-04-17T16:59:40.910+10:00 I t6 file_format.cc:118 skipping demux match for piper file: /private/var/folders/v2/q9fyj8xj79j0swdknql4jby40000gp/T/lnav-user-502-work/piper/p-7320949e7b3143e54f7b320f4522399e-000/out.1909f56bfc062723c751e8b465ee728b.1
+2026-04-17T16:59:40.910+10:00 I t6 file_collection.cc:589 loading new file: filename=/private/var/folders/v2/q9fyj8xj79j0swdknql4jby40000gp/T/lnav-user-502-work/piper/p-7320949e7b3143e54f7b320f4522399e-000/out.1909f56bfc062723c751e8b465ee728b.1
+2026-04-17T16:59:40.910+10:00 I t6 logfile.cc:138 Creating logfile: fd=16; size=4118; mtime=1776409180; filename=/private/var/folders/v2/q9fyj8xj79j0swdknql4jby40000gp/T/lnav-user-502-work/piper/p-7320949e7b3143e54f7b320f4522399e-000/out.1909f56bfc062723c751e8b465ee728b.1
+2026-04-17T16:59:40.910+10:00 I t6 logfile.cc:140   actual_path=/private/var/folders/v2/q9fyj8xj79j0swdknql4jby40000gp/T/lnav-user-502-work/piper/p-7320949e7b3143e54f7b320f4522399e-000/out.1909f56bfc062723c751e8b465ee728b.1
+2026-04-17T16:59:40.910+10:00 I t6 logfile.cc:160 stdin: has header 1
+2026-04-17T16:59:40.910+10:00 I t6 logfile.cc:184 setting file name from piper header: stdin
+2026-04-17T16:59:40.910+10:00 I t6 logfile.cc:257 checking new generation of file options: 0 -> 1
+2026-04-17T16:59:40.910+10:00 D t6 line_buffer.cc:1613 sending initial load
+2026-04-17T16:59:40.912+10:00 D t0 logfile.cc:901 scanning file... stdin
+2026-04-17T16:59:40.912+10:00 D t0 logfile.cc:997 loading file... stdin:0
+2026-04-17T16:59:40.912+10:00 D t0 logfile.cc:1095 setting text format to text/plain
+2026-04-17T16:59:40.912+10:00 I t0 logfile.cc:486   scan with format (logfmt_log) matched with quality of 2000 and 0 strikes
+2026-04-17T16:59:40.912+10:00 E t0 shared_buffer.cc:65 failed postcondition `this->sb_length < (10 * 1024 * 1024)'
+2026-04-17T16:59:40.912+10:00 E t7 lnav_log.cc:685 couldn't remove alternate signal stack (Invalid argument)
+2026-04-17T16:59:40.912+10:00 E t0 lnav_log.cc:430 Received signal: 6
+0   lnav                                0x0000000103275c9c _ZL7sigabrtiP9__siginfoPv + 232
+1   lnav                                0x00000001033b0120 fatal_handler + 292
+2   libsystem_platform.dylib            0x00000001932d0624 _sigtramp + 56
+3   libsystem_pthread.dylib             0x000000019329688c pthread_kill + 296
+4   libsystem_c.dylib                   0x0000000193167d04 raise + 32
+5   lnav                                0x000000010327604c _Z9log_abortv + 16
+6   lnav                                0x00000001030d4bc8 _ZN17shared_buffer_ref6disownEv + 0
+7   lnav                                0x0000000102f75648 _ZN11line_buffer10read_rangeE10file_rangeNS_14scan_directionE + 424
+8   lnav                                0x000000010305a9b8 _ZN7logfile9read_lineENSt3__111__wrap_iterIP7loglineEE15subline_options + 112
+9   lnav                                0x00000001030220a8 _ZN14bro_log_format4scanER7logfileRNSt3__16vectorI7loglineNS2_9allocatorIS4_EEEERK9line_infoR17shared_buffer_refR18scan_batch_context + 360
+10  lnav                                0x0000000103055b4c _ZN7logfile14process_prefixER17shared_buffer_refRK9line_infoR18scan_batch_context + 1384
+11  lnav                                0x00000001030594c4 _ZN7logfile13rebuild_indexENSt3__18optionalINS0_6chrono10time_pointINS2_12steady_clockENS2_8durationIxNS0_5ratioILl1ELl1000000000EEEEEEEEE + 5772
+12  lnav                                0x00000001031114bc _ZN19textfile_sub_source12rescan_filesERNS_13scan_callbackENSt3__18optionalINS2_6chrono10time_pointINS4_12steady_clockENS4_8durationIxNS2_5ratioILl1ELl1000000000EEEEEEEEE + 956
+13  lnav                                0x0000000102e8f5fc _Z15rebuild_indexesNSt3__18optionalINS_6chrono10time_pointINS1_12steady_clockENS1_8durationIxNS_5ratioILl1ELl1000000000EEEEEEEEE + 364
+14  lnav                                0x0000000102e3da24 _ZL6looperv + 9828
+15  lnav                                0x0000000102e327cc main + 25008
+16  dyld                                0x0000000192ef6b98 start + 6076
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:206 uname:
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:207   sysname=Darwin
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:208   nodename=NEPAUJ9R2H61XWD
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:209   machine=arm64
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:210   release=24.5.0
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:211   version=Darwin Kernel Version 24.5.0: Tue Apr 22 19:54:43 PDT 2025; root:xnu-11417.121.6~2/RELEASE_ARM64_T8132
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:212 PCRE:
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:213   jit=0
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:214   jittarget=
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:215 Environment:
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:216   HOME=/Users/hpalmer
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:217   XDG_CONFIG_HOME=(null)
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:218   LANG=en_AU.UTF-8
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:219   PATH=/Users/hpalmer/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/usr/local/go/bin:/Applications/Ghostty.app/Contents/MacOS:/Users/hpalmer/go/bin:/Applications/Obsidian.app/Contents/MacOS:/Users/hpalmer/go/bin
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:220   TERM=tmux-256color
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:221   TZ=(null)
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:222 Process:
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:223   pid=12932
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:224   ppid=27994
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:225   pgrp=12931
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:226   uid=502
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:227   gid=20
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:228   euid=502
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:229   egid=20
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:233   cwd=/Users/hpalmer/Documents/Projects/tfc-routestate-graph
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:235 Executable:
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:236   version=lnav 0.13.2
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:237   mtime=1772142896
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:240 rusage:
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:240   utime=0.132775
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:240   stime=0.281071
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:240   maxrss=25542656
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:240   ixrss=0
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:240   idrss=0
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:240   isrss=0
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:240   minflt=22220
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:240   majflt=24
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:240   nswap=0
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:240   inblock=0
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:240   oublock=0
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:240   msgsnd=0
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:240   msgrcv=0
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:240   nsignals=4
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:240   nvcsw=8
+2026-04-17T16:59:40.913+10:00 I t0 lnav_log.cc:240   nivcsw=21004
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:510 listview_curses=0x1040cb698
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:520   vc_title=Documentation; vc_y=63; lv_top=0; lv_left=0; lv_height=0; lv_selection=0; inner_height=0
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:510 listview_curses=0x1040cbab8
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:520   vc_title=Text Filters; vc_y=57; lv_top=0; lv_left=0; lv_height=5; lv_selection=0; inner_height=0
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:510 listview_curses=0x1040cc278
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:520   vc_title=Files; vc_y=57; lv_top=0; lv_left=0; lv_height=5; lv_selection=0; inner_height=1
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:510 listview_curses=0x1040cc698
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:520   vc_title=File Details; vc_y=57; lv_top=0; lv_left=0; lv_height=5; lv_selection=-1; inner_height=84
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:510 listview_curses=0x1040ccda0
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:520   vc_title=Examples; vc_y=0; lv_top=0; lv_left=0; lv_height=0; lv_selection=0; inner_height=0
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:510 listview_curses=0x1040cd790
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:520   vc_title=Preview #0; vc_y=63; lv_top=0; lv_left=0; lv_height=0; lv_selection=0; inner_height=0
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:510 listview_curses=0x1040cdbb0
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:520   vc_title=Preview #1; vc_y=63; lv_top=0; lv_left=0; lv_height=0; lv_selection=0; inner_height=0
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:510 listview_curses=0x1040ce2b8
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:520   vc_title=; vc_y=63; lv_top=0; lv_left=0; lv_height=0; lv_selection=0; inner_height=0
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:510 listview_curses=0x1040ce6e0
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:520   vc_title=spectro-details; vc_y=56; lv_top=0; lv_left=0; lv_height=5; lv_selection=-1; inner_height=1
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:510 listview_curses=0x1040cede8
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:520   vc_title=timeline-details; vc_y=63; lv_top=0; lv_left=0; lv_height=5; lv_selection=-1; inner_height=0
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:510 listview_curses=0x1040cf598
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:520   vc_title=LOG; vc_y=2; lv_top=0; lv_left=0; lv_height=-9; lv_selection=-1; inner_height=0
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:510 listview_curses=0x1040cf9b8
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:520   vc_title=TEXT; vc_y=2; lv_top=0; lv_left=0; lv_height=-9; lv_selection=0; inner_height=0
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:510 listview_curses=0x1040cfdd8
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:520   vc_title=HELP; vc_y=2; lv_top=0; lv_left=0; lv_height=-9; lv_selection=0; inner_height=0
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:510 listview_curses=0x1040d01f8
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:520   vc_title=HIST; vc_y=2; lv_top=0; lv_left=0; lv_height=-9; lv_selection=-1; inner_height=0
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:510 listview_curses=0x1040d0618
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:520   vc_title=DB; vc_y=2; lv_top=0; lv_left=0; lv_height=-9; lv_selection=-1; inner_height=0
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:510 listview_curses=0x1040d0a38
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:520   vc_title=SCHEMA; vc_y=2; lv_top=0; lv_left=0; lv_height=-9; lv_selection=0; inner_height=0
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:510 listview_curses=0x1040d0e58
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:520   vc_title=PRETTY; vc_y=2; lv_top=0; lv_left=0; lv_height=-9; lv_selection=0; inner_height=0
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:510 listview_curses=0x1040d1278
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:520   vc_title=SPECTRO; vc_y=2; lv_top=0; lv_left=0; lv_height=-9; lv_selection=-1; inner_height=0
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:510 listview_curses=0x1040d1698
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:520   vc_title=TIMELINE; vc_y=2; lv_top=0; lv_left=0; lv_height=-9; lv_selection=0; inner_height=0
+2026-04-17T16:59:40.913+10:00 I t0 lnav.hh:96 recent_key_presses: index=0
+ 0x0 ( ) 0x0 ( ) 0x0 ( ) 0x0 ( ) 0x0 ( ) 0x0 ( ) 0x0 ( ) 0x0 ( ) 0x0 ( ) 0x0 ( )
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:510 listview_curses=0x13300c718
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:520   vc_title=Pattern; vc_y=0; lv_top=0; lv_left=0; lv_height=0; lv_selection=-1; inner_height=0
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:510 listview_curses=0x13300ce38
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:520   vc_title=textinput help; vc_y=0; lv_top=0; lv_left=0; lv_height=0; lv_selection=0; inner_height=30
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:510 listview_curses=0x13300e890
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:520   vc_title=breadcrumb popup; vc_y=0; lv_top=0; lv_left=0; lv_height=0; lv_selection=-1; inner_height=0
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:510 listview_curses=0x1040af960
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:520   vc_title=textinput popup; vc_y=63; lv_top=0; lv_left=0; lv_height=0; lv_selection=-1; inner_height=0
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:510 listview_curses=0x1040b0080
+2026-04-17T16:59:40.913+10:00 D t0 listview_curses.hh:520   vc_title=textinput help; vc_y=0; lv_top=0; lv_left=0; lv_height=0; lv_selection=0; inner_height=30
