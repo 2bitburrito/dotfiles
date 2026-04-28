@@ -17,5 +17,8 @@
         "--headless"
       ]
     }
-  }
+  },
+  "plugin": [
+    "opencode-gemini-auth@latest"
+  ]
 }

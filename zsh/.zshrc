@@ -193,3 +193,6 @@ eval "$(zoxide init zsh)"
 if [ -f "$HOME/.local/bin/env" ]; then
   . "$HOME/.local/bin/env"
 fi
+
+# Created by `pipx` on 2026-04-26 03:07:21
+export PATH="$PATH:/Users/hugh/.local/bin"
