@@ -77,8 +77,12 @@ alias ls="lsd"
 alias td='nvim ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Coding\ Vault/Daily\ Notes/todo.md'
 alias proj='cd "$(find ~/Documents/Projects -mindepth 1 -maxdepth 1 -type d | fzf)"'
 alias k='kubectl'
+alias kctx='kubectx'
+alias kns='kubens'
 alias n='nvim .'
 alias oc='opencode'
+alias logs="kubectl get deployments | awk 'NR>1 {print $1}' | fzf | xargs stern --output raw"
+alias lg="lazygit"
 
 # This is a hack to get arount the stupid autocorrect behaviour here:
 # ❯ go test ./... -v
@@ -137,6 +141,29 @@ gits() {
     echo "No branch selected."
   fi
 }
+
+gh-release(){
+  local branch
+  branch="$(git branch --show-current)" 
+  gh release create --target "$branch" --generate-notes --draft
+}
+
+# TFC funcs
+tfc-cfg() {
+  [[ -f ~/.tfc/config ]] || {
+    print -u2 "Missing ~/.tfc/config"
+    return 1
+  }
+  awk -F': ' -v key="$1" '$1 == key { print $2 }' ~/.tfc/config
+}
+
+tfc-curl() {
+  local base_api token
+  base_api="$(tfc_cfg base_api)"
+  token="$(tfc_cfg token)"
+  curl -H "Authorization: Bearer $token" "$base_api$1" | jq
+}
+
 # Dirs
 alias ..="cd .."
 alias ...="cd ../.."
@@ -194,5 +221,3 @@ if [ -f "$HOME/.local/bin/env" ]; then
   . "$HOME/.local/bin/env"
 fi
 
-# Created by `pipx` on 2026-04-26 03:07:21
-export PATH="$PATH:/Users/hugh/.local/bin"

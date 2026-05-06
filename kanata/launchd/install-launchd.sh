@@ -2,10 +2,18 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+INVOKING_USER="${SUDO_USER:-$USER}"
+USER_HOME="$(dscl . -read "/Users/$INVOKING_USER" NFSHomeDirectory | awk '{print $2}')"
+
+if [[ -z "${USER_HOME:-}" ]]; then
+  echo "Could not resolve home directory for user: $INVOKING_USER" >&2
+  exit 1
+fi
 
 sudo mkdir -p /Library/Logs/Kanata
 
-sudo install -m 644 "$SCRIPT_DIR/com.hugh.kanata.plist" /Library/LaunchDaemons/com.hugh.kanata.plist
+sed "s|__HOME__|$USER_HOME|g" "$SCRIPT_DIR/com.hugh.kanata.plist" | sudo tee /Library/LaunchDaemons/com.hugh.kanata.plist >/dev/null
+sudo chmod 644 /Library/LaunchDaemons/com.hugh.kanata.plist
 sudo install -m 644 "$SCRIPT_DIR/com.hugh.karabiner-vhiddaemon.plist" /Library/LaunchDaemons/com.hugh.karabiner-vhiddaemon.plist
 sudo install -m 644 "$SCRIPT_DIR/com.hugh.karabiner-vhidmanager.plist" /Library/LaunchDaemons/com.hugh.karabiner-vhidmanager.plist
 

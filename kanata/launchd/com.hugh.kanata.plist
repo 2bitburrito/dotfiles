@@ -9,7 +9,7 @@
   <array>
     <string>/opt/homebrew/bin/kanata</string>
     <string>-c</string>
-    <string>/Users/hugh/.config/kanata/kanata.kbd</string>
+    <string>__HOME__/.config/kanata/kanata.kbd</string>
     <string>--port</string>
     <string>10000</string>
   </array>
