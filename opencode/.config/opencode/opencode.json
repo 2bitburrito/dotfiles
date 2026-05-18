@@ -20,5 +20,10 @@
   },
   "plugin": [
     "opencode-gemini-auth@latest"
-  ]
+  ],
+  "permission": {
+    "external_directory": {
+      "~/Documents/Projects/**": "allow"
+    }
+  }
 }

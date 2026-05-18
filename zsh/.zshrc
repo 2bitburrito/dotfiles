@@ -93,9 +93,10 @@ alias go='nocorrect go'
 #  Global Aliases
 # ================
 
-alias -g JQ="| jq"
-alias -g C="| pbcopy"
-alias -g P="pbpaste >>"
+alias -g J="| jq"
+alias -g JL="| jless"
+alias -g Cp="| pbcopy"
+alias -g Ps="pbpaste >>"
 alias -g L="| less"
 alias -g G="| rg "
 
@@ -159,9 +160,9 @@ tfc-cfg() {
 
 tfc-curl() {
   local base_api token
-  base_api="$(tfc_cfg base_api)"
-  token="$(tfc_cfg token)"
-  curl -H "Authorization: Bearer $token" "$base_api$1" | jq
+  base_api="$(tfc-cfg base_api)"
+  token="$(tfc-cfg token)"
+  curl -H "Authorization: Bearer $token" "$base_api$1" 
 }
 
 # Dirs
@@ -220,4 +221,3 @@ eval "$(zoxide init zsh)"
 if [ -f "$HOME/.local/bin/env" ]; then
   . "$HOME/.local/bin/env"
 fi
-
