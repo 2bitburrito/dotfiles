@@ -2,9 +2,9 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 local map = vim.keymap.set
 
--- Move up and down while centering
-map({ "n", "x" }, "<C-d>", "<C-d>zz", { noremap = true })
-map({ "n", "x" }, "<C-u>", "<C-u>zz", { noremap = true })
+-- Move up and down and fix to top
+map({ "n", "x" }, "<C-d>", "<C-d>zt", { noremap = true })
+map({ "n", "x" }, "<C-u>", "<C-u>zt", { noremap = true })
 
 -- Fix commands to copy into "_" register rather than "+"
 -- in a schedule so that it loads after all plugins
@@ -33,3 +33,7 @@ end, { noremap = true, desc = "Toggle SuperMaven" })
 -- Try to fix stupid esc j/k behaviour...?
 -- map({ "n", "i", "v" }, "<A-j>", "<Nop>", { silent = true })
 -- map({ "n", "i", "v" }, "<A-k>", "<Nop>", { silent = true })
+--
+
+-- Remap cmd from ':' to enter
+map("n", "<CR>", ":", { noremap = false })
