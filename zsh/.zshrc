@@ -231,3 +231,5 @@ function y() {
 	[ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd"
 	command rm -f -- "$tmp"
 }
+# Added by git-ai installer on Tue 26 May 2026 22:05:47 AEST
+export PATH="/Users/hpalmer/.git-ai/bin:$PATH"
