@@ -1,0 +1,38 @@
+opencode/.config/opencode/commands/tfc-review.md
+  s_829036adeb3cd6::t_306e791475f9ad 2,5,19,25,37,40
+opencode/.config/opencode/opencode.json
+  s_0f0e4d41d88544::t_16722cc941fb6f 10
+  s_64c348ce17c161::t_9f7305cfe0b82c 4-6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.3",
+  "base_commit_sha": "a76257699a3ce0b032d904d361829a0469008003",
+  "prompts": {},
+  "sessions": {
+    "s_0f0e4d41d88544": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_174b91001ffecA1wugjWlm4RzR",
+        "model": "gpt-5.5"
+      },
+      "human_author": "Hugh Palmer <palmerhap@gmail.com>"
+    },
+    "s_64c348ce17c161": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_19d1551d4ffeRPKdfi7kgxnyfK",
+        "model": "gpt-5.4"
+      },
+      "human_author": "Hugh Palmer <palmerhap@gmail.com>"
+    },
+    "s_829036adeb3cd6": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_17a58b3b4ffeM1ofEbNhYd3Xi2",
+        "model": "gpt-5.5"
+      },
+      "human_author": "Hugh Palmer <palmerhap@gmail.com>"
+    }
+  }
+}
