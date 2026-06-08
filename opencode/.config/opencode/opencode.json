@@ -1,9 +1,13 @@
 {
   "$schema": "https://opencode.ai/config.json",
+  "logLevel": "DEBUG",
+  "experimental": {
+    "mcp_timeout": 5000
+  },
   "mcp": {
     "atlassian": {
       "type": "remote",
-      "url": "https://mcp.atlassian.com/v1/sse",
+      "url": "https://mcp.atlassian.com/v1/mcp",
       "oauth": {
         "scope": "tools:read write"
       }
@@ -18,11 +22,18 @@
       ]
     }
   },
-  "plugin": [
-    "opencode-gemini-auth@latest"
-  ],
   "permission": {
+    "read": {
+      "~/go/pkg/mod": "allow",
+      "~/go/pkg/mod/**": "allow"
+    },
+    "edit": {
+      "~/go/pkg/mod": "deny",
+      "~/go/pkg/mod/**": "deny"
+    },
     "external_directory": {
+      "~/go/pkg/mod": "allow",
+      "~/go/pkg/mod/**": "allow",
       "~/Documents/Projects/**": "allow"
     }
   }

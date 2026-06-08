@@ -47,3 +47,6 @@
   hunk-header-style = "#868E99"
   hunk-header-file-style = "#868E99" dim
   hunk-header-decoration-style = "#163050" ol ul
+[trace2]
+	eventTarget = af_unix:stream:/Users/hpalmer/.git-ai/internal/daemon/trace2.sock
+	eventNesting = 10
