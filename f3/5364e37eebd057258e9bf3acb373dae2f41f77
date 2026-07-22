@@ -1,0 +1,46 @@
+nvim/.config/nvim/lua/config/autocmds.lua
+  s_7efe66ea31fdc4::t_0cec26d2fb684c 31
+  s_7efe66ea31fdc4::t_b0d211db30b47c 27-30,32-39
+  s_7efe66ea31fdc4::t_7169ed1590435f 40-42
+opencode/.config/opencode/skills/grilling/SKILL.md
+  s_da2196fd5021b2::t_b4cce51c48d94d 1-14
+tmux/.config/tmux/tmux.conf
+  s_b0ceecc2d27466::t_0265ac96af9fa8 75
+nvim/.config/nvim/lua/plugins/lspconfig.lua
+  s_7efe66ea31fdc4::t_b0d211db30b47c 13-20,22-23
+  s_7efe66ea31fdc4::t_ee1fcf2bc6b258 21
+opencode/.config/opencode/commands/grill.md
+  s_da2196fd5021b2::t_b4cce51c48d94d 1-17
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "f35364e37eebd057258e9bf3acb373dae2f41f77",
+  "prompts": {},
+  "sessions": {
+    "s_7efe66ea31fdc4": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_0a98beeafffeBCUCC14yKX3PvL",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Hugh Palmer <palmerhap@gmail.com>"
+    },
+    "s_b0ceecc2d27466": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_07897d0d0ffeSL03MaUc52SHQX",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Hugh Palmer <palmerhap@gmail.com>"
+    },
+    "s_da2196fd5021b2": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_1271d1dfbffe91TWJdXcbOluFY",
+        "model": "gpt-5.5"
+      },
+      "human_author": "Hugh Palmer <palmerhap@gmail.com>"
+    }
+  }
+}
