@@ -83,6 +83,8 @@ alias n='nvim .'
 alias oc='opencode'
 alias logs="kubectl get deployments | awk 'NR>1 {print $1}' | fzf | xargs stern --output raw"
 alias lg="lazygit"
+alias sfy="spotify_player"
+alias irc="senpai"
 
 # This is a hack to get arount the stupid autocorrect behaviour here:
 # ❯ go test ./... -v
@@ -99,6 +101,7 @@ alias -g Cp="| pbcopy"
 alias -g Ps="pbpaste >>"
 alias -g L="| less"
 alias -g G="| rg "
+alias -g D='$(basename "$PWD")'
 
 # ================
 #  Suffix Aliases
@@ -128,7 +131,6 @@ alias -s wav='xxd'
 chpwd() {
   ls -a
 }
-
 
 gits() {
   local branch
@@ -205,6 +207,7 @@ preexec() { echo -ne '\e[5 q\e[?12l' ;} # Use beam shape cursor for each new pro
 # ======
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+export PATH="$HOME/Library/Python/3.9/bin:$PATH"
 export VISUAL='nvim'
 export GOPRIVATE=github.com/nepgpe/*
 
@@ -233,3 +236,9 @@ function y() {
 }
 # Added by git-ai installer on Tue 26 May 2026 22:05:47 AEST
 export PATH="/Users/hpalmer/.git-ai/bin:$PATH"
+
+# AsyncAPI CLI Autocomplete
+
+ASYNCAPI_AC_ZSH_SETUP_PATH=/Users/hpalmer/Library/Caches/@asyncapi/cli/autocomplete/zsh_setup && test -f $ASYNCAPI_AC_ZSH_SETUP_PATH && source $ASYNCAPI_AC_ZSH_SETUP_PATH; # asyncapi autocomplete setup
+
+

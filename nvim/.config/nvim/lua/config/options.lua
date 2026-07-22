@@ -10,4 +10,5 @@ vim.opt.wrap = true
 vim.g.loaded_matchparen = 1
 
 -- Add GOFLAGS to env on boot:
-vim.fn.setenv("GOFLAGS", "-tags=integration")
+-- NOTE: This is the only place that appears to affect goflags correctly.
+vim.fn.setenv("GOFLAGS", "-tags=integration,mage,loadtest")

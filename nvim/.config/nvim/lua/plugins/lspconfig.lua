@@ -8,10 +8,19 @@ return {
       inlay_hints = {
         enabled = false,
       },
-      init_options = {
-        buildFlags = { "-tags=integration" },
-      },
+      init_options = {},
       servers = {
+        clangd = {
+          cmd = {
+            "clangd",
+            "--background-index",
+            "--clang-tidy",
+            "--header-insertion=iwyu",
+            "--completion-style=detailed",
+            "--function-arg-placeholders",
+            "--fallback-style={BasedOnStyle: LLVM, IndentWidth: 4, ContinuationIndentWidth: 4, TabWidth: 4, UseTab: Never, BreakBeforeBraces: Attach, ColumnLimit: 80, PointerAlignment: Right}",
+          },
+        },
         tsserver = false,
         markdownlint = false,
         ts_ls = false,
@@ -22,8 +31,6 @@ return {
         html = {},
         gopls = {
           gofumpt = false,
-          env = { GOFLAGS = "-tags=integration" },
-          buildFlags = { "-tags=integration" },
           codelenses = {
             gc_details = false,
             generate = true,
