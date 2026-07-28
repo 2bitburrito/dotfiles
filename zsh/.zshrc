@@ -216,8 +216,6 @@ complete -o nospace -C /opt/homebrew/bin/terraform terraform
 
 bindkey "^X^E" edit-command-line
 
-[ -f ~/.anthropic.env ] && source ~/.anthropic.env
-
 # Adding zoxide
 eval "$(zoxide init zsh)"
 
