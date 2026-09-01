@@ -37,3 +37,17 @@ end, { noremap = true, desc = "Toggle SuperMaven" })
 
 -- Remap cmd from ':' to enter
 map("n", "<CR>", ":", { noremap = false })
+
+-- When running ctrl-g copy the pwd to the sys-clipboard
+vim.keymap.set({ "n", "x" }, "<C-g>", function()
+  -- Capture the full status string and copy to clipboard
+  vim.cmd('redir @+ | silent execute "normal! \\<C-g>" | redir END')
+  -- Get the current full path and extract just the filename
+  local full_path = vim.api.nvim_buf_get_name(0)
+  local file_name = vim.fn.fnamemodify(full_path, ":t")
+  -- Fallback for unnamed/new buffers
+  if file_name == "" then
+    file_name = "[No Name]"
+  end
+  print("Copied full path of: " .. file_name)
+end, { noremap = true, desc = "Copy current file path to clipboard" })

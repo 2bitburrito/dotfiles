@@ -107,6 +107,7 @@ alias -g D='$(basename "$PWD")'
 #  Suffix Aliases
 # ================
 
+alias -g readme='cat README.md'
 alias -s md='bat'
 alias -s json='jless'
 alias -s yaml='bat -l yaml'
