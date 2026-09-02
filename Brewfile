@@ -1,10 +1,11 @@
 tap "anomalyco/tap", "https://github.com/anomalyco/homebrew-tap.git"
 tap "asmvik/formulae", "https://github.com/asmvik/homebrew-formulae.git"
+tap "atlassian/acli"
 tap "bbc/audiowaveform"
 tap "derailed/k9s"
-tap "felixkratz/formulae", "https://github.com/FelixKratz/homebrew-formulae"
+tap "dlvhdr/formulae"
+tap "felixkratz/formulae"
 tap "hashicorp/tap"
-tap "homebrew/services"
 tap "localstack/tap"
 tap "mongodb/brew"
 tap "nikitabobko/tap"
@@ -12,28 +13,38 @@ tap "opencode-ai/tap"
 tap "stripe/stripe-cli"
 tap "supabase/tap"
 tap "teamookla/speedtest"
+# Codec library for encoding and decoding AV1 video streams
+brew "aom"
+# Code searching, linting, rewriting
+brew "ast-grep"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Generate compilation database for clang tooling
+brew "bear"
 # Core application library for C
 brew "glib"
 # Vector graphics library with cross-device output support
 brew "cairo"
 # OpenType text shaping engine
 brew "harfbuzz"
-# Development kit for the Java programming language
-brew "openjdk"
 # Remove large files or passwords from Git history like git-filter-branch
 brew "bfg"
 # Manage your dotfiles across multiple diverse machines, securely
 brew "chezmoi"
 # Console Matrix
 brew "cmatrix"
+# Package acting as bridge between Node projects and their package managers
+brew "corepack"
+# GNU File, Shell, and Text utilities
+brew "coreutils"
 # Apjanke's fork of the classic cowsay project
 brew "cowsay"
+# AV1 decoder targeted to be small and fast
+brew "dav1d"
 # Secure runtime for JavaScript and TypeScript
 brew "deno"
 # Kubernetes command-line interface
@@ -90,8 +101,8 @@ brew "graphviz"
 brew "grpcurl"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
-# Kubernetes package manager
-brew "helm"
+# Git hook and pre-commit lint manager
+brew "hk"
 # Improved top (interactive process viewer)
 brew "htop"
 # Configurable static site generator
@@ -114,6 +125,8 @@ brew "libass"
 brew "libvorbis"
 # C library for files containing sampled sound
 brew "libsndfile"
+# Curses-based tool for viewing and analyzing log files
+brew "lnav"
 # Clone of ls with colorful output, file type icons, and more
 brew "lsd"
 # Package manager for the Lua programming language
@@ -124,20 +137,18 @@ brew "mariadb"
 brew "minikube"
 # Netwide Assembler (NASM) is an 80x86 assembler
 brew "nasm"
-# E-mail reader with support for Notmuch, NNTP and much more
-brew "neomutt"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# Spice circuit simulator
-brew "ngspice"
+# Provides a software solution to manage, store, and distribute sensitive data
+brew "openbao"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # AI coding agent, built for the terminal
 brew "opencode"
 # Swiss-army knife of markup format conversion
 brew "pandoc"
-# Execute binaries from Python packages in isolated environments
-brew "pipx"
+# Language server for Pkl
+brew "pkl-lsp"
 # Object-relational database system
 brew "postgresql@14"
 # Object-relational database system
@@ -152,8 +163,6 @@ brew "protobuf"
 brew "python@3.12"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.13"
-# Rsync for cloud storage
-brew "rclone"
 # Powerful, clean, object-oriented scripting language
 brew "ruby", link: false
 # SDL 1.2 compatibility layer that uses SDL 2.0 behind the scenes
@@ -162,12 +171,14 @@ brew "sdl12-compat"
 brew "senpai"
 # GNU's portable shell tool
 brew "shtool"
+# Command driven spotify player
+brew "spotify_player"
+# Spotify daemon
+brew "spotifyd"
 # Generate type safe Go from SQL
 brew "sqlc"
 # Cross-shell prompt for astronauts
 brew "starship"
-# Tail multiple Kubernetes pods & their containers
-brew "stern"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
 # Convert TeXinfo files to HTML
@@ -178,8 +189,6 @@ brew "theora"
 brew "tmux"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
-# Extremely fast Python package installer and resolver, written in Rust
-brew "uv"
 # HTTP load testing tool and library
 brew "vegeta"
 # Image processing library
@@ -190,28 +199,32 @@ brew "websocat"
 brew "wget"
 # High-performance, high-quality MPEG-4 video library
 brew "xvid"
+# Modular BSD reimplementation of NASM
+brew "yasm"
 # Blazing fast terminal file manager written in Rust, based on async I/O
 brew "yazi"
-# Feature-rich command-line audio/video downloader
-brew "yt-dlp"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
+# Git diff pager based on delta but with a file tree, à la GitHub
+brew "dlvhdr/formulae/diffnav", trusted: true
 # Command-line interface for 1Password
 cask "1password-cli"
-# AeroSpace is an i3-like tiling window manager for macOS
-cask "nikitabobko/tap/aerospace"
+cask "aerospace"
+# Desktop password and login vault
+cask "bitwarden"
 # Open source IDE for exploring and testing APIs
 cask "bruno"
+# Terminal-based AI coding assistant
+cask "claude-code"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
 cask "font-monaspace"
+# Set of tools to manage resources and applications hosted on Google Cloud
+cask "gcloud-cli"
 # Keyboard customiser
 cask "karabiner-elements"
-# Electronics design automation suite
-cask "kicad"
 # Customise mouse behavior
 cask "linearmouse"
-# Image/GIF capture suite
 cask "magiccap"
 # Create mock APIs in seconds
 cask "mockoon"
@@ -235,8 +248,7 @@ vscode "enkia.tokyo-night"
 vscode "esbenp.prettier-vscode"
 vscode "file-icons.file-icons"
 vscode "fill-labs.dependi"
-vscode "github.copilot"
-vscode "github.copilot-chat"
+vscode "git-ai.git-ai-vscode"
 vscode "golang.go"
 vscode "gruntfuggly.todo-tree"
 vscode "hashicorp.terraform"
@@ -260,13 +272,13 @@ vscode "ms-vscode-remote.remote-containers"
 vscode "ms-vscode-remote.remote-ssh"
 vscode "ms-vscode-remote.remote-ssh-edit"
 vscode "ms-vscode.cmake-tools"
+vscode "ms-vscode.cpp-devtools"
 vscode "ms-vscode.cpptools"
 vscode "ms-vscode.cpptools-extension-pack"
 vscode "ms-vscode.cpptools-themes"
 vscode "ms-vscode.remote-explorer"
 vscode "naumovs.color-highlight"
 vscode "notblank00.hexeditor"
-vscode "openai.openai-chatgpt-adhoc"
 vscode "pkief.material-icon-theme"
 vscode "pranaygp.vscode-css-peek"
 vscode "rangav.vscode-thunder-client"
@@ -288,14 +300,15 @@ vscode "vscode-icons-team.vscode-icons"
 vscode "vscodevim.vim"
 vscode "yile-ou.paddy-color-theme"
 go "github.com/air-verse/air"
+go "golang.org/x/perf/cmd/benchstat"
 go "github.com/bootdotdev/bootdev"
 go "golang.org/x/tools/cmd/callgraph"
-go "github.com/sigstore/cosign/v3/cmd/cosign"
 go "github.com/go-delve/delve/cmd/dlv"
 go "github.com/davidrjenni/reftools/cmd/fillswitch"
 go "github.com/onsi/ginkgo/v2/ginkgo"
 go "github.com/melkeydev/go-blueprint"
 go "github.com/abice/go-enum"
+go "github.com/cucumber/godog/cmd/godog"
 go "mvdan.cc/gofumpt"
 go "golang.org/x/tools/cmd/goimports"
 go "github.com/twpayne/go-jsonstruct/v3/cmd/gojsonstruct"
@@ -310,27 +323,26 @@ go "github.com/cweill/gotests/gotests"
 go "gotest.tools/gotestsum"
 go "honnef.co/go/gotraceui/cmd/gotraceui"
 go "golang.org/x/vuln/cmd/govulncheck"
-go "github.com/2bitburrito/hellogo"
+go "github.com/hughpalmer/hollywood-flow.nvim/cmd/hollywood-flow-analyze"
 go "github.com/koron/iferr"
 go "github.com/josharian/impl"
 go "github.com/tmc/json-to-struct"
+go "github.com/magefile/mage"
 go "go.uber.org/mock/mockgen"
+go "github.com/nepgpe/tfc-nmos-module-upgrade-tool/cmd/nmosupgrade"
+go "pr-formatter"
+go "github.com/nepgpe/prfmt"
 go "google.golang.org/protobuf/cmd/protoc-gen-go"
 go "github.com/vitor-mariano/regex-tui"
 go "github.com/2bitburrito/reps/cmd/reps"
 go "github.com/kyoh86/richgo"
 go "honnef.co/go/tools/cmd/staticcheck"
 go "github.com/stern/stern"
+go "github.com/hughap/structscan"
+go "github.com/nepgpe/tfc-cli"
 cargo "rustlings"
-uv "atopile"
-npm "@anthropic-ai/claude-code"
-npm "@aws-amplify/backend-cli"
-npm "@aws-amplify/cli"
-npm "@hydraulic/conveyor"
-npm "eslint"
-npm "live-server"
-npm "neovim"
-npm "opencode-with-claude"
-npm "prettier"
+uv "ruff"
+uv "zmk"
+npm "@earendil-works/pi-coding-agent"
+npm "typescript-language-server"
 npm "typescript"
-npm "wrangler"
