@@ -48,4 +48,7 @@ local set_autoformat = function(pattern, bool_val)
   })
 end
 
-set_autoformat({ "yaml" }, false)
+set_autoformat({
+  "yaml",
+  -- "robot"
+}, false)

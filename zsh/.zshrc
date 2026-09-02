@@ -161,11 +161,26 @@ tfc-cfg() {
   awk -F': ' -v key="$1" '$1 == key { print $2 }' ~/.tfc/config
 }
 
-tfc-curl() {
-  local base_api token
+tfc() {
+  local method="$1" endpoint="$2" base_api token
+
+  if [[ "$method" != "get" && "$method" != "post" ]] || [[ -z "$endpoint" ]]; then
+    print -u2 "Usage: tfc {get|post} <endpoint> [curl arguments]"
+    return 1
+  fi
+
+  shift 2
   base_api="$(tfc-cfg base_api)"
   token="$(tfc-cfg token)"
-  curl -H "Authorization: Bearer $token" "$base_api$1" 
+
+  if [[ "$method" == "post" ]]; then
+    curl -X POST \
+      -H "Authorization: Bearer $token" \
+      -H "Content-Type: application/json" \
+      "$base_api$endpoint" "$@"
+  else
+    curl -X GET -H "Authorization: Bearer $token" "$base_api$endpoint" "$@"
+  fi
 }
 
 # Dirs
@@ -241,3 +256,6 @@ export PATH="/Users/hpalmer/.git-ai/bin:$PATH"
 ASYNCAPI_AC_ZSH_SETUP_PATH=/Users/hpalmer/Library/Caches/@asyncapi/cli/autocomplete/zsh_setup && test -f $ASYNCAPI_AC_ZSH_SETUP_PATH && source $ASYNCAPI_AC_ZSH_SETUP_PATH; # asyncapi autocomplete setup
 
 
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
