@@ -1,0 +1,16 @@
+Brewfile
+  h_6cb3e9a166364a 3,6-7,16-19,26-27,40-43,46-47,104-105,128-129,142-143,150-151,174-177,202-203,208-209,212-214,217-218,222-223,251,275,303,311,326,330,332-334,341-342,344-347
+nvim/.config/nvim/lazy-lock.json
+  h_6cb3e9a166364a 3,39-42,49-50
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "2942c8e71f8e1830de4651a8d927829469ce7d9d",
+  "prompts": {},
+  "humans": {
+    "h_6cb3e9a166364a": {
+      "author": "Hugh Palmer <palmerhap@gmail.com>"
+    }
+  }
+}
