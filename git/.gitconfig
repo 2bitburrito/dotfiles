@@ -49,8 +49,8 @@
   hunk-header-decoration-style = "#163050" ol ul
 [pager]
 	diff = diffnav
+[rebase]
+  updateRefs = true
 [trace2]
 	eventTarget = af_unix:stream:/Users/hpalmer/.git-ai/internal/daemon/trace2.sock
 	eventNesting = 0
-[rebase]
-  updateRefs = true
