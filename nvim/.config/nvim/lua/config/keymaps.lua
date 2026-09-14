@@ -13,6 +13,37 @@ map("x", "p", '"_dP', { noremap = true, silent = true })
 -- Find n Replace all from current word
 map({ "n" }, "<leader>r", ":%s/<C-r><C-w>/", { noremap = true, desc = "Find and replace word" })
 
+-- Find references to the Go function or method containing the cursor.
+map("n", "gR", function()
+  local node = vim.treesitter.get_node()
+  while node and node:type() ~= "function_declaration" and node:type() ~= "method_declaration" do
+    node = node:parent()
+  end
+
+  local name = node and node:field("name")[1]
+  if not name then
+    vim.notify("Cursor is not inside a function or method", vim.log.levels.WARN)
+    return
+  end
+
+  local cursor = vim.api.nvim_win_get_cursor(0)
+  local win = vim.api.nvim_get_current_win()
+  local row, col = name:start()
+  vim.api.nvim_win_set_cursor(win, { row + 1, col })
+
+  local function restore_cursor()
+    if vim.api.nvim_win_is_valid(win) then
+      vim.api.nvim_win_set_cursor(win, cursor)
+    end
+  end
+
+  local ok, err = pcall(Snacks.picker.lsp_references, { on_close = restore_cursor })
+  if not ok then
+    restore_cursor()
+    error(err)
+  end
+end, { desc = "References of enclosing function" })
+
 -- Open Oil:
 map({ "n" }, "<leader>e", function()
   require("oil").open_float()
