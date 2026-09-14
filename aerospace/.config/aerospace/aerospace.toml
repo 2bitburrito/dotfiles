@@ -66,8 +66,6 @@ outer.right = 2
 alt-ctrl-shift-enter = 'exec-and-forget open -a /Applications/Ghostty.app'
 alt-ctrl-shift-t = 'exec-and-forget open -a /Applications/Ghostty.app'
 
-alt-ctrl-shift-v = 'exec-and-forget open -a /Applications/Visual\ Studio\ Code.app'
-
 alt-ctrl-shift-b = 'exec-and-forget open -a /Applications/Messages.app'
 
 alt-ctrl-shift-s = 'exec-and-forget open -a /Applications/Spotify.app'
@@ -157,9 +155,6 @@ run = 'move-node-to-workspace Msg'
 [[on-window-detected]]
 if.app-id = 'com.google.Chrome'
 run = 'move-node-to-workspace 2'
-[[on-window-detected]]
-if.app-id = 'com.microsoft.VSCode'
-run = 'move-node-to-workspace 1'
 [[on-window-detected]]
 if.app-id = 'com.apple.mail'
 run = 'move-node-to-workspace Msg'
