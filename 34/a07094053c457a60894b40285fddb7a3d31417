@@ -1,0 +1,14 @@
+git/.gitconfig
+  h_6cb3e9a166364a 52-53
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "34a07094053c457a60894b40285fddb7a3d31417",
+  "prompts": {},
+  "humans": {
+    "h_6cb3e9a166364a": {
+      "author": "Hugh Palmer <palmerhap@gmail.com>"
+    }
+  }
+}
