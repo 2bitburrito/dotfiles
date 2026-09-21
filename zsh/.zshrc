@@ -2,8 +2,19 @@
 #    Oh-My-Zsh
 # ================
 
-source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
+typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+if [[ "$OSTYPE" == darwin* ]]; then
+  source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
+else
+  source "$HOME/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme"
+fi
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME=""
 HYPHEN_INSENSITIVE="true"
@@ -41,9 +52,11 @@ export ARCHFLAGS="-arch $(uname -m)"
 # ===============
 #      FZF
 # ===============
-# fzf completions
-source $(brew --prefix)/opt/fzf/shell/completion.zsh
-source $(brew --prefix)/opt/fzf/shell/key-bindings.zsh
+# fzf completions (Homebrew paths on macOS; `fzf --zsh` below covers Linux)
+if [[ "$OSTYPE" == darwin* ]] && command -v brew >/dev/null; then
+  source "$(brew --prefix)/opt/fzf/shell/completion.zsh"
+  source "$(brew --prefix)/opt/fzf/shell/key-bindings.zsh"
+fi
 
 
 # Set up fzf key bindings and fuzzy completion
@@ -60,9 +73,12 @@ bindkey -r -M viins '\ec'
 alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias nvimconfig="cd ~/.config/nvim/ && nvim ."
-alias ghosttyconfig="nvim ~/Library/Application\ Support/com.mitchellh.ghostty/config"
+if [[ "$OSTYPE" == darwin* ]]; then
+  alias ghosttyconfig="nvim ~/Library/Application\ Support/com.mitchellh.ghostty/config"
+else
+  alias ghosttyconfig="nvim ~/.config/ghostty/config"
+fi
 alias tmuxconfig="nvim ~/.config/tmux/tmux.conf"
-alias aeroconfig="nvim ~/.config/aerospace/aerospace.toml"
 
 # ================
 #  Other Aliases
@@ -97,15 +113,25 @@ alias go='nocorrect go'
 
 alias -g J="| jq"
 alias -g JL="| jless"
-alias -g Cp="| pbcopy"
-alias -g Ps="pbpaste >>"
 alias -g L="| less"
 alias -g G="| rg "
 alias -g D='$(basename "$PWD")'
 
+# Copy and paste
+if [[ "$OSTYPE" == darwin* ]]; then
+  alias -g Cp="pbcopy"
+  alias -g Ps="pbpaste"
+else
+  alias -g Cp="wl-copy"
+  alias -g Ps="wl-paste"
+fi
+
 # ================
 #  Suffix Aliases
 # ================
+
+# portable `open` (macOS provides it natively)
+[[ "$OSTYPE" == darwin* ]] || alias open='xdg-open'
 
 alias -g readme='cat README.md'
 alias -s md='bat'
@@ -223,12 +249,12 @@ preexec() { echo -ne '\e[5 q\e[?12l' ;} # Use beam shape cursor for each new pro
 # ======
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
-export PATH="$HOME/Library/Python/3.9/bin:$PATH"
+[[ "$OSTYPE" == darwin* ]] && export PATH="$HOME/Library/Python/3.9/bin:$PATH"
 export VISUAL='nvim'
 export GOPRIVATE=github.com/nepgpe/*
 
 autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /opt/homebrew/bin/terraform terraform
+command -v terraform >/dev/null && complete -o nospace -C "$(command -v terraform)" terraform
 
 bindkey "^X^E" edit-command-line
 
@@ -249,13 +275,13 @@ function y() {
 	command rm -f -- "$tmp"
 }
 # Added by git-ai installer on Tue 26 May 2026 22:05:47 AEST
-export PATH="/Users/hpalmer/.git-ai/bin:$PATH"
+[[ -d "$HOME/.git-ai/bin" ]] && export PATH="$HOME/.git-ai/bin:$PATH"
 
 # AsyncAPI CLI Autocomplete
 
-ASYNCAPI_AC_ZSH_SETUP_PATH=/Users/hpalmer/Library/Caches/@asyncapi/cli/autocomplete/zsh_setup && test -f $ASYNCAPI_AC_ZSH_SETUP_PATH && source $ASYNCAPI_AC_ZSH_SETUP_PATH; # asyncapi autocomplete setup
+ASYNCAPI_AC_ZSH_SETUP_PATH="$HOME/Library/Caches/@asyncapi/cli/autocomplete/zsh_setup" && test -f $ASYNCAPI_AC_ZSH_SETUP_PATH && source $ASYNCAPI_AC_ZSH_SETUP_PATH; # asyncapi autocomplete setup
 
 
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - zsh)"
+command -v pyenv >/dev/null && eval "$(pyenv init - zsh)"
