@@ -3,17 +3,17 @@
 	email = palmerhap@gmail.com
 [core]
 	editor = nvim
-	excludesfile = /Users/hpalmer/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [push]
 	autoSetupRemote = true
 [init]
 	defaultBranch = main
 [credential "https://github.com"]
-	helper = 
-	helper = !/opt/homebrew/bin/gh auth git-credential
+	helper =
+	helper = !gh auth git-credential
 [credential "https://gist.github.com"]
-	helper = 
-	helper = !/opt/homebrew/bin/gh auth git-credential
+	helper =
+	helper = !gh auth git-credential
 [url "ssh://git@github.com/"]
     insteadOf = https://github.com/
 [delta]
@@ -51,6 +51,8 @@
 	diff = diffnav
 [rebase]
   updateRefs = true
-[trace2]
-	eventTarget = af_unix:stream:/Users/hpalmer/.git-ai/internal/daemon/trace2.sock
-	eventNesting = 0
+
+# machine/OS-specific overrides (e.g. git-ai trace2 socket on macOS); silently
+# skipped by git if the file doesn't exist, see git-darwin package
+[include]
+	path = ~/.gitconfig.local

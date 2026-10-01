@@ -1,0 +1,10 @@
+# OS cruft
+.DS_Store
+
+# lnav runtime state (not config)
+lnav/.config/lnav/crash/
+lnav/.config/lnav/*.db
+lnav/.config/lnav/view-info-*.json
+
+# delve runtime state (not config)
+delve/.dlv/.dbg_history
