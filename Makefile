@@ -11,7 +11,7 @@ COMMON_PKGS := delve gh gh-dash git nvim opencode tmux zsh
 DARWIN_PKGS := aerospace borders claude ghostty-darwin git-darwin kanata karabiner
 
 # Omarchy (Arch + Hyprland) specific packages.
-OMARCHY_PKGS := ghostty-omarchy
+OMARCHY_PKGS := ghostty-omarchy hypr
 
 install:
 ifeq ($(UNAME), Darwin)
