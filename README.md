@@ -22,9 +22,10 @@ portable.
 make install
 ```
 
-Detects the OS (`Darwin` vs. everything else, i.e. Omarchy) and stows the
-right package set, plus installs the pre-commit git hook. On macOS it also
-sets key repeat speed and runs `brew bundle` against `Brewfile`.
+Detects the OS (`Darwin` vs. everything else, i.e. Omarchy), stows the right
+package set, installs the zsh dependencies, makes zsh the login shell, installs
+tmux plugins, and installs the pre-commit git hook. On macOS it also sets key
+repeat speed and runs `brew bundle` against `Brewfile`.
 
 Run a subset directly if you only want part of it:
 
@@ -32,6 +33,9 @@ Run a subset directly if you only want part of it:
 make install-common   # cross-platform packages only
 make install-darwin   # common + macOS-only packages
 make install-omarchy  # common + Omarchy-only packages
+make install-zsh-deps # Oh My Zsh and Powerlevel10k
+make set-shell        # make zsh the login shell
+make install-tmux-plugins
 ```
 
 If a target file already exists and isn't a symlink into this repo (e.g. a

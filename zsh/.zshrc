@@ -97,6 +97,9 @@ alias kctx='kubectx'
 alias kns='kubens'
 alias n='nvim .'
 alias oc='opencode'
+function occ() {
+  OPENCODE_CONFIG="$HOME/.config/opencode/claude.json" opencode "$@"
+}
 alias logs="kubectl get deployments | awk 'NR>1 {print $1}' | fzf | xargs stern --output raw"
 alias lg="lazygit"
 alias sfy="spotify_player"
