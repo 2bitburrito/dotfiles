@@ -9,7 +9,10 @@ directory is a stow package mirroring the layout of `$HOME`.
   `nvim`, `opencode`, `tmux`, `zsh`
 - **macOS only**: `aerospace`, `borders`, `ghostty-darwin`, `git-darwin`,
   `kanata`, `karabiner`
-- **Omarchy (Arch + Hyprland) only**: `ghostty-omarchy`
+- **Omarchy (Arch + Hyprland) only**: `ghostty-omarchy`, `hypr`, `omarchy`
+
+The `omarchy` package includes the Appgate bar widget and shell layout. The
+widget expects Appgate SDP, `jq`, and `ripgrep` to be installed.
 
 `git-darwin` supplies `~/.gitconfig.local`, which the common `git` package's
 `.gitconfig` includes if present (silently skipped elsewhere) — that's where

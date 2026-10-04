@@ -1,0 +1,77 @@
+#!/usr/bin/env bash
+
+set -uo pipefail
+
+window_address() {
+  hyprctl clients -j 2>/dev/null | jq -r '[.[] | select(.class == "appgate")][0].address // empty'
+}
+
+status() {
+  if ! pgrep -f '/opt/appgate/(Appgate|service/appgateservice\.bin)' >/dev/null; then
+    printf '%s\n' stopped
+    return
+  fi
+
+  local log="$HOME/.appgate/log/log.log"
+  local state=""
+  if [[ -r "$log" ]]; then
+    state=$(tac "$log" | rg -m1 -o "NewLogicState '[^']+'" | cut -d"'" -f2 || true)
+  fi
+
+  case "$state" in
+    loggedin)
+      if systemctl is-active --quiet appgatedriver.service; then
+        printf '%s\n' connected
+      else
+        printf '%s\n' error
+      fi
+      ;;
+    loggingin)
+      printf '%s\n' connecting
+      ;;
+    *)
+      printf '%s\n' running
+      ;;
+  esac
+}
+
+toggle() {
+  local address
+  local appgate_workspace
+  local current_workspace
+  address=$(window_address)
+
+  if [[ -z "$address" ]]; then
+    if ! systemctl is-active --quiet appgatedriver.service; then
+      pkexec systemctl start appgatedriver.service || exit 1
+    fi
+
+    uwsm-app -- appgate >/dev/null 2>&1 &
+
+    for _ in {1..100}; do
+      sleep 0.1
+      address=$(window_address)
+      [[ -n "$address" ]] && break
+    done
+
+    [[ -z "$address" ]] && exit 1
+  fi
+
+  appgate_workspace=$(hyprctl clients -j | jq -r --arg address "$address" '.[] | select(.address == $address) | .workspace.id')
+
+  if [[ "$appgate_workspace" == "99" ]]; then
+    current_workspace=$(hyprctl activeworkspace -j | jq -r '.id')
+    hyprctl eval "hl.dispatch(hl.dsp.window.move({ workspace = \"$current_workspace\", follow = false, window = \"address:$address\" })); hl.dispatch(hl.dsp.window.center({ window = \"address:$address\" })); return hl.dispatch(hl.dsp.focus({ window = \"address:$address\" }))" >/dev/null
+  else
+    hyprctl eval "return hl.dispatch(hl.dsp.window.move({ workspace = \"99\", follow = false, window = \"address:$address\" }))" >/dev/null
+  fi
+}
+
+case "${1:-status}" in
+  status) status ;;
+  toggle) toggle ;;
+  *)
+    printf 'Usage: %s [status|toggle]\n' "$0" >&2
+    exit 2
+    ;;
+esac

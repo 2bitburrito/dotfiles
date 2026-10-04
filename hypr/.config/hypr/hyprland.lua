@@ -27,3 +27,8 @@ require("default.hypr.toggles")
 
 -- Add any other personal Hyprland configuration below.
 -- o.window("qemu", { workspace = "5" })
+o.window("^appgate$", {
+  workspace = "99 silent",
+  float = true,
+  center = true,
+})
