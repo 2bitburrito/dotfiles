@@ -44,7 +44,7 @@ hl.config({
     --       clickfinger_behavior = true,
     --
     --       -- Control the speed of your scrolling.
-    scroll_factor = 0.6,
+    scroll_factor = 0.3,
     --
     --       -- Enable the touchpad while typing.
     --       disable_while_typing = false,
@@ -53,6 +53,12 @@ hl.config({
     --       drag_3fg = 1,
     --     },
   },
+})
+
+hl.config({
+  cursor = {
+    no_warps = true,
+  }
 })
 
 -- App-specific touchpad scroll speeds.

@@ -25,6 +25,9 @@ hl.config({
       render_power = 3,
       color = "#1a1a1aee",
     },
+    motion_blur = {
+      enabled = true,
+    },
 
     blur = {
       enabled = true,

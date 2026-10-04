@@ -1,7 +1,7 @@
 -- Personal keybinding overrides.
 -- Ported from the pre-Quattro ~/.config/hypr/bindings.conf, which Omarchy 4 no
 -- longer sources. Loaded after Omarchy's defaults, so anything here wins.
---
+-- Defaults live at: "/usr/share/omarchy/default/hypr/bindings/"
 
 hl.unbind("SUPER + J") -- Was: Toggle window split
 hl.unbind("SUPER + K") -- Was: Keybindings
@@ -49,13 +49,8 @@ o.bind("SUPER + SHIFT + T", "Activity", { tui = "btop" })
 hl.unbind("SUPER + O") -- was: Pop window out (float & pin)
 o.bind("SUPER + O", "Pop window out (float & pin)", "omarchy-hyprland-window-pop")
 
-hl.unbind("SUPER + SHIFT + W") -- was: Omawrite
-o.bind("SUPER + SHIFT + W", "Typora", { launch = "typora --enable-wayland-ime" })
-
-hl.unbind("SUPER + SHIFT + SLASH") -- was: 1Password
-o.bind("SUPER + SHIFT + SLASH", "Passwords", { launch = "bitwarden" })
-hl.unbind("SUPER + COMMA") -- Was: Dismiss last notification
-o.bind("SUPER + COMMA", "Toggle tiling", hl.dsp.window.float({ action = "toggle" }))
+hl.unbind("SUPER + SLASH") -- was: change display zoom
+o.bind("SUPER + SLASH", "Toggle tiling", hl.dsp.window.float({ action = "toggle" }))
 -- SUPER + W: mac-style "close tab, not the window" for browsers.
 -- Omarchy tags every browser window with chromium-based-browser or
 -- firefox-based-browser (see /usr/share/omarchy/default/hypr/apps/browser.lua).
@@ -92,8 +87,7 @@ o.bind("SUPER + W", "Close tab (browser) / window", function()
 end)
 
 -- Clipboard Manager
-hl.unbind("SUPER + V") -- Was: Universal paste
-o.bind("SUPER + V", "Clipboard manager", "omarchy-shell shell toggle omarchy.clipboard")
+o.bind("SUPER + SHIFT + V", "Clipboard manager", "omarchy-shell shell toggle omarchy.clipboard")
 
--- Emoji picker (Omarchy's default lives on SUPER + CTRL + E; add it on SUPER too).
 o.bind("SUPER + E", "Emojis", "omarchy-shell shell toggle omarchy.emojis")
+-- Emoji picker (Omarchy's default lives on SUPER + CTRL + E; add it on SUPER too).

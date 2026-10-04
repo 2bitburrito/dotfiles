@@ -28,7 +28,8 @@
   "permission": {
     "read": {
       "~/go/pkg/mod": "allow",
-      "~/go/pkg/mod/**": "allow"
+      "~/go/pkg/mod/**": "allow",
+      "~/**": "allow"
     },
     "edit": {
       "~/go/pkg/mod": "deny",
