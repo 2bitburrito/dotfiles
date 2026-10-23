@@ -1,0 +1,21 @@
+nvim/.config/nvim/lua/plugins/treesiterconfig.lua
+  s_489261edd40382::t_03401fd327cf28 5
+nvim/.config/nvim/lua/plugins/lspconfig.lua
+  s_489261edd40382::t_629ac95b731322 1-2,64-74
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "f9b980be464f465e28bbba9293ee431cae6f0b3a",
+  "prompts": {},
+  "sessions": {
+    "s_489261edd40382": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_f9af3546cffeC4rGAic2pBAWBt",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Hugh Palmer <palmerhap@gmail.com>"
+    }
+  }
+}
