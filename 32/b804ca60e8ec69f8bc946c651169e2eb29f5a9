@@ -1,0 +1,59 @@
+hypr/.config/hypr/hyprland.lua
+  s_3683fe2ba69271::t_b874060a72f413 35,37-38,40-42,44
+  s_3683fe2ba69271::t_d58d7153c82bd2 36
+  s_3683fe2ba69271::t_00672e101e6aea 39
+  s_3683fe2ba69271::t_281e235aa9226f 43
+hypr/.config/hypr/autostart.lua
+  s_3683fe2ba69271::t_b874060a72f413 4-5
+  s_3683fe2ba69271::t_04772aeef9d96d 3
+nvim/.config/nvim/lua/plugins/obsidian.lua
+  s_036f81b5471e86::t_d1f2d193ca13f8 1-3,6,43
+omarchy/.config/omarchy/shell.json
+  s_f5592f3297724c::t_47d93d4d7d3a95 10
+hypr/.config/hypr/monitors.lua
+  s_f5592f3297724c::t_405357ea6fc4bf 9,11-66
+  s_f5592f3297724c::t_fcf85baf321bc4 8
+hypr/.config/hypr/bindings.lua
+  s_ab5e135c04cad2::t_a2d39b6165fdf5 10-50,67-72
+  s_ab5e135c04cad2::t_37a98c281e6a5c 73-75
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "32b804ca60e8ec69f8bc946c651169e2eb29f5a9",
+  "prompts": {},
+  "sessions": {
+    "s_036f81b5471e86": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_eec5508a4ffeRasdsgGwog4bpD",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Hugh Palmer <palmerhap@gmail.com>"
+    },
+    "s_3683fe2ba69271": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ef03a53a3ffePMSQXMmwR3saJX",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Hugh Palmer <palmerhap@gmail.com>"
+    },
+    "s_ab5e135c04cad2": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_ed3063dadffec9z6jQ2wxgNvu5",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "Hugh Palmer <palmerhap@gmail.com>"
+    },
+    "s_f5592f3297724c": {
+      "agent_id": {
+        "tool": "opencode",
+        "id": "ses_e9a2222cfffepc8RVsN6KekK18",
+        "model": "openai/gpt-6.1-sol"
+      },
+      "human_author": "Hugh Palmer <palmerhap@gmail.com>"
+    }
+  }
+}
