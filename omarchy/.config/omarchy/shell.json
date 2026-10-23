@@ -4,22 +4,10 @@
     "layout": {
       "center": [
         {
-          "id": "omarchy.indicators"
-        },
-        {
-          "format": "dddd HH:mm",
-          "formatAlt": "d MMMM 'W'ww yyyy",
-          "id": "omarchy.clock",
-          "verticalFormat": "HH\n—\nmm"
-        },
-        {
           "id": "omarchy.keyboard-layout"
         },
         {
-          "id": "omarchy.weather"
-        },
-        {
-          "id": "omarchy.system-update"
+          "id": "hpalmer.workspaces"
         }
       ],
       "left": [
@@ -27,10 +15,25 @@
           "id": "omarchy.menu"
         },
         {
-          "id": "omarchy.workspaces"
+          "id": "omarchy.system-update"
+        },
+        {
+          "id": "omarchy.clock",
+          "format": "ddd d MMM HH:mm",
+          "formatAlt": "d MMMM 'W'ww yyyy",
+          "verticalFormat": "HH\n—\nmm"
+        },
+        {
+          "id": "omarchy.weather"
+        },
+        {
+          "id": "omarchy.indicators"
         }
       ],
       "right": [
+        {
+          "id": "omarchy.tailscale"
+        },
         {
           "id": "omarchy.tray"
         },
@@ -39,10 +42,10 @@
           "type": "qml"
         },
         {
-          "id": "omarchy.tailscale"
+          "id": "omarchy.agents"
         },
         {
-          "id": "omarchy.agents"
+          "id": "omarchy.monitor"
         },
         {
           "id": "omarchy.bluetooth"
@@ -52,9 +55,6 @@
         },
         {
           "id": "omarchy.audio"
-        },
-        {
-          "id": "omarchy.monitor"
         },
         {
           "id": "omarchy.power"

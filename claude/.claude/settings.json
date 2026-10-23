@@ -2,24 +2,24 @@
   "hooks": {
     "PostToolUse": [
       {
-        "matcher": "*",
         "hooks": [
           {
-            "type": "command",
-            "command": "/Users/hpalmer/.git-ai/bin/git-ai checkpoint claude --hook-input stdin"
+            "command": "/home/hpalmer/.git-ai/bin/git-ai checkpoint claude --hook-input stdin",
+            "type": "command"
           }
-        ]
+        ],
+        "matcher": "*"
       }
     ],
     "PreToolUse": [
       {
-        "matcher": "*",
         "hooks": [
           {
-            "type": "command",
-            "command": "/Users/hpalmer/.git-ai/bin/git-ai checkpoint claude --hook-input stdin"
+            "command": "/home/hpalmer/.git-ai/bin/git-ai checkpoint claude --hook-input stdin",
+            "type": "command"
           }
-        ]
+        ],
+        "matcher": "*"
       }
     ]
   },

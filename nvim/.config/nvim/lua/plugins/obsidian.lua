@@ -1,6 +1,9 @@
+local vault_path = vim.env.OBSIDIAN_VAULT
+  or "~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Coding Vault"
+
 return {
   "obsidian-nvim/obsidian.nvim",
-  enabled = true,
+  enabled = vim.fn.isdirectory(vim.fn.expand(vault_path)) == 1,
   version = "*",
   lazy = true,
   ft = "markdown",
@@ -37,7 +40,7 @@ return {
     workspaces = {
       {
         name = "coding",
-        path = "~/Library/Mobile Documents/iCloud~md~obsidian/Documents/Coding Vault",
+        path = vault_path,
       },
     },
   },

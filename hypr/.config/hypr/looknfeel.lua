@@ -15,6 +15,13 @@ hl.config({
 })
 
 -- https://wiki.hypr.land/Configuring/Basics/Variables/#decoration
+-- Give tiled scratchpad windows more breathing room without changing other workspaces.
+hl.workspace_rule({
+  workspace = "special:scratchpad",
+  gaps_out = 130,
+  gaps_in = 50,
+})
+
 hl.config({
   decoration = {
     -- Use round window corners.

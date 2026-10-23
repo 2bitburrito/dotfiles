@@ -16,48 +16,40 @@ hl.config({
 -- See https://wiki.hypr.land/Configuring/Basics/Variables/#input
 hl.config({
   input = {
-    --     -- Use multiple keyboard layouts and switch between them with Left Alt + Right Alt.
-    --     kb_layout = "us,dk,eu",
-    --     kb_options = "compose:caps,shift:both_capslock_cancel,grp:alts_toggle",
-    --
-    --     -- Use a specific keyboard variant if needed (e.g. intl for international keyboards).
-    --     kb_variant = "intl",
-    --
     -- Change speed of keyboard repeat.
     repeat_rate = 35,
     repeat_delay = 150,
-    --
+
     -- Start with numlock on by default.
     numlock_by_default = true,
     --
-    --     -- Increase sensitivity for mouse/trackpad (default: 0).
+    -- Increase sensitivity for mouse/trackpad (default: 0).
     sensitivity = 0,
     --
-    --     -- Turn off mouse acceleration (default: adaptive).
+    -- Turn off mouse acceleration (default: adaptive).
     --     accel_profile = "flat",
     --
-    --     touchpad = {
-    --       -- Use natural (inverse) scrolling.
-    --       natural_scroll = true,
     --
-    --       -- Use two-finger clicks for right-click instead of lower-right corner.
-    --       clickfinger_behavior = true,
     --
-    --       -- Control the speed of your scrolling.
-    scroll_factor = 0.3,
-    --
-    --       -- Enable the touchpad while typing.
+    -- Scroll fasctor for mouse wheel:
+    scroll_factor = 0.6,
+
+    touchpad = {
+      scroll_factor = 0.3,
+      drag_3fg = 1,
+    }
+    -- Enable the touchpad while typing.
     --       disable_while_typing = false,
     --
-    --       -- Left-click-and-drag with three fingers.
-    --       drag_3fg = 1,
+    -- Left-click-and-drag with three fingers.
     --     },
   },
 })
 
 hl.config({
   cursor = {
-    no_warps = true,
+    -- Mouse cursor jumping when focus changes
+    no_warps = false,
   }
 })
 

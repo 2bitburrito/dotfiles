@@ -32,3 +32,13 @@ o.window("^appgate$", {
   float = true,
   center = true,
 })
+
+-- Open scratchpad apps tiled on login, using the scratchpad's workspace gaps.
+o.window("^org\\.omarchy\\.btop$", {
+  workspace = "special:scratchpad silent",
+  tile = true,
+})
+o.window("^Spotify$", {
+  workspace = "special:scratchpad silent",
+  tile = true,
+})

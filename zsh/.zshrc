@@ -284,7 +284,14 @@ function y() {
 
 ASYNCAPI_AC_ZSH_SETUP_PATH="$HOME/Library/Caches/@asyncapi/cli/autocomplete/zsh_setup" && test -f $ASYNCAPI_AC_ZSH_SETUP_PATH && source $ASYNCAPI_AC_ZSH_SETUP_PATH; # asyncapi autocomplete setup
 
-
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 command -v pyenv >/dev/null && eval "$(pyenv init - zsh)"
+
+eval "$(mise activate zsh)"
+
+# Added by git-ai installer on Wed Oct  7 09:26:26 2026
+export PATH="/home/hpalmer/.git-ai/bin:$PATH"
+
+# opencode
+export PATH=/home/hpalmer/.opencode/bin:$PATH
